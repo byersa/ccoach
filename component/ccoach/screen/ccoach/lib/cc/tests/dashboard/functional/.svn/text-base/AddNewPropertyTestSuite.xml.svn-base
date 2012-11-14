@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ats xmlns="dojobiz/ats"
+     xmlns:beans="dojobiz/context/beans"
+     xmlns:id="decorator://dojobiz/ats/decorators/FindByIdDecorator">
+
+    <beans:Context>
+        <TestSuite id="Add New Property">
+            <TestCase id="Navigate to Welcome page"
+                      type="functional"
+                      skip="false"
+                      page="/ccoach/control/main">
+                <Path>
+                    <DeferredSteps waitFor="welcomeView" state="downloadEnd">
+                        <StepTo id:node="signInNavLink" asWidget="false" duration="1000">
+                            <MouseClick left="true"/>
+                        </StepTo>
+                    </DeferredSteps>
+                </Path>
+            </TestCase>
+
+            <TestCase id="Navigate to SignIn page"
+                      type="functional"
+                      skip="false">
+                <Path>
+                    <DeferredSteps waitFor="signInView" state="downloadEnd">
+                        <StepTo id:node="signInLoginTextBox">
+                            <Blur/>
+                            <SetValue value="User"/>
+                        </StepTo>
+
+                        <StepTo id:node="signInPasswordTextBox">
+                            <Blur/>
+                            <SetValue value="pass"/>
+                        </StepTo>
+
+                        <StepTo id:node="performSignInBtn">
+                            <MouseClick left="true"/>
+                        </StepTo>
+                    </DeferredSteps>
+                </Path>
+            </TestCase>
+
+            <TestCase id="Navigate to Properties page"
+                      type="functional"
+                      skip="false">
+                <Path>
+                    <DeferredSteps waitFor="propertiesView" state="downloadEnd">
+                        <Step delay="100"/>
+                    </DeferredSteps>
+                </Path>
+            </TestCase>
+
+            <TestCase id="Add Property"
+                      type="functional"
+                      skip="false"
+                      implement="/ccoach/lib/cc/tests/dashboard/cases/AddPropertyTestCase">
+                <Path>
+                    <DeferredSteps waitFor="propertiesView" state="downloadEnd">
+                        <StepTo id:node="propertyAddBtn">
+                            <MouseClick left="true"/>
+                        </StepTo>
+                        <StepTo id:node="addPropertyConfirmBtn">
+                            <MouseClick left="true"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormStreet">
+                            <Blur/>
+                            <SetValue value="Street Address"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormZip">
+                            <Blur/>
+                            <SetValue value="12345"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormParcelNum">
+                            <Blur/>
+                            <SetValue value="12345678"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormCity">
+                            <Blur/>
+                            <SetValue value="City"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormSituatedCounty">
+                            <Blur/>
+                            <SetValue value="County"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormClientId">
+                            <Blur/>
+                            <SetValue value="ClientId"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormClientNames">
+                            <Blur/>
+                            <SetValue value="ClientNames"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormClientNotes">
+                            <Blur/>
+                            <SetValue value="ClientNotes"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormMlsNum">
+                            <Blur/>
+                            <SetValue value="ft123456"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormPropSqFt">
+                            <Blur/>
+                            <SetValue value="12345"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormPropYearBuilt">
+                            <Blur/>
+                            <SetValue value="1987"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormPropStyle">
+                            <Blur/>
+                            <SetValue value="Rancho"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormTotalCommission">
+                            <Blur/>
+                            <SetValue value="3"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormListPercentage">
+                            <Blur/>
+                            <SetValue value="4"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormSellPercentage">
+                            <Blur/>
+                            <SetValue value="5"/>
+                        </StepTo>
+                        <StepTo id:node="propertyFormOriginalLP">
+                            <Blur/>
+                            <SetValue value="1234.56"/>
+                        </StepTo>
+                        <StepTo id:node="addPropertyConfirmBtn">
+                            <MouseClick left="true"/>
+                        </StepTo>
+                    </DeferredSteps>
+                </Path>
+            </TestCase>
+        </TestSuite>
+    </beans:Context>
+</ats>

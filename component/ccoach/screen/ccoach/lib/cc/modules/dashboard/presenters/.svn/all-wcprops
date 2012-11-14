@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/8339/ccoach/webapp/ccoach/lib/cc/modules/dashboard/presenters
+END
+OfferPresenter.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/8339/ccoach/webapp/ccoach/lib/cc/modules/dashboard/presenters/OfferPresenter.js
+END
+PropertyPresenter.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/8339/ccoach/webapp/ccoach/lib/cc/modules/dashboard/presenters/PropertyPresenter.js
+END
+BasePresenter.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/8339/ccoach/webapp/ccoach/lib/cc/modules/dashboard/presenters/BasePresenter.js
+END
+ContactPresenter.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/8339/ccoach/webapp/ccoach/lib/cc/modules/dashboard/presenters/ContactPresenter.js
+END

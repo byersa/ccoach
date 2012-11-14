@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/dashboard/functional
+END
+ContactsTestSuite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/dashboard/functional/ContactsTestSuite.xml
+END
+DeactivatePropertyTestSuite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/dashboard/functional/DeactivatePropertyTestSuite.xml
+END
+OfferTestSuite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/dashboard/functional/OfferTestSuite.xml
+END
+MyAccountTestSuite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/dashboard/functional/MyAccountTestSuite.xml
+END
+AddNewOfferTestSuite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/8339/ccoach/webapp/ccoach/lib/cc/tests/dashboard/functional/AddNewOfferTestSuite.xml
+END
+PropertyTestSuite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/dashboard/functional/PropertyTestSuite.xml
+END
+ActivatePropertyTestSuite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/dashboard/functional/ActivatePropertyTestSuite.xml
+END
+AddNewPropertyTestSuite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/dashboard/functional/AddNewPropertyTestSuite.xml
+END
+DashboardTestSuite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/dashboard/functional/DashboardTestSuite.xml
+END
+SignOutTestSuite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/dashboard/functional/SignOutTestSuite.xml
+END

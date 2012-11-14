@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/main/functional
+END
+ForgotPasswordTestSuite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/main/functional/ForgotPasswordTestSuite.xml
+END
+RegisterTestSuite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/main/functional/RegisterTestSuite.xml
+END
+SignInTestSuite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/main/functional/SignInTestSuite.xml
+END
+HelpTestSuite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/main/functional/HelpTestSuite.xml
+END
+WelcomeTestSuite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/8293/ccoach/webapp/ccoach/lib/cc/tests/main/functional/WelcomeTestSuite.xml
+END

@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Offer Details</title>
+</head>
+<body>
+<div class="offerDetailsHolder"
+         data-dojo-type="dijit.layout.BorderContainer"
+         data-dojo-props="gutters:true, liveSplitters:true">
+
+    <div data-dojo-type="dijit.layout.ContentPane"
+         data-dojo-props="region:'top'"
+         style="height: 10%; overflow: hidden;">
+
+        <h2>Offer #${offerId}</h2>
+    </div>
+
+    <div data-dojo-type="dijit.layout.ContentPane"
+         data-dojo-props="splitter:true, region:'center'"
+         style="height: 90%">
+
+        <div data-dojo-type="dijit.layout.BorderContainer"
+             data-dojo-props="gutters:true, liveSplitters:true"
+             style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
+
+            <div data-dojo-type="dijit.layout.ContentPane"
+                 data-dojo-props="splitter:true, region:'left'"
+                 style="width: 40%">
+
+                <div class="offersTabContainer"
+                     data-dojo-type="dijit.layout.TabContainer"
+                     tabPosition="left-h">
+
+                    <div id="summary_${offerId}"
+                         data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Summary'">
+
+                        <table>
+                            <tr>
+                                <th><label>Creation Date</label></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div data-context-query=".propDetailsDateBox"
+                                         data-dojo-props="name:'creationDate', value:'${creationDate}', displayedValue:'${creationDate}'">
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th><label>Offer From</label></th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div data-context-query=".propertyDetailsTextBox"
+                                         data-dojo-props="name:'offerFrom', style:'width: 10em', value:'${offerFrom}'">
+                                    </div>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="financial_${offerId}"
+                         data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Financial'">
+                        This is financial pane
+                    </div>
+                </div>
+            </div>
+
+            <div data-dojo-type="dijit.layout.ContentPane"
+                 data-dojo-props="splitter:true, region:'center'"
+                 style="width: 60%">
+
+                <div class="offersTabContainer"
+                     data-dojo-type="dijit.layout.TabContainer"
+                     tabPosition="left-h">
+
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'P1'">
+                        <img style="border:3px solid #363837; width:99%;" src="/ccoach/themes/images/delete/rpa1.png" alt="P1" title="P1" />
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'P2'">
+                        <img style="border:3px solid #363837; width:99%;" src="/ccoach/themes/images/delete/rpa2.png" alt="P2" title="P2" />
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'P3'">
+                        <img style="border:3px solid #363837; width:99%;" src="/ccoach/themes/images/delete/rpa3.png" alt="P3" title="P3" />
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'P4'">
+                        <img style="border:3px solid #363837; width:99%;" src="/ccoach/themes/images/delete/rpa4.png" alt="P4" title="P4" />
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'P5'">
+                        <img style="border:3px solid #363837; width:99%;" src="/ccoach/themes/images/delete/rpa5.png" alt="P5" title="P5" />
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'P6'">
+                        <img style="border:3px solid #363837; width:99%;" src="/ccoach/themes/images/delete/rpa6.png" alt="P6" title="P6" />
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'P7'">
+                        <img style="border:3px solid #363837; width:99%;" src="/ccoach/themes/images/delete/rpa7.png" alt="P7" title="P7" />
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'P8'">
+                        <img style="border:3px solid #363837; width:99%;" src="/ccoach/themes/images/delete/rpa8.png" alt="P8" title="P8" />
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'P9'">
+                        <img style="border:3px solid #363837; width:99%;" src="/ccoach/themes/images/delete/rpa9.png" alt="P9" title="P9" />
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'P10'">
+                        <img style="border:3px solid #363837; width:99%;" src="/ccoach/themes/images/delete/rpa10.png" alt="P10" title="P10" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="offerTextRow">
+        <h1>Offer #: ${offerId}</h1>
+    </div>
+    <div class="offerTextRow">
+        <div data-dojo-type="dijit.layout.AccordionContainer">
+            <div data-dojo-type="dijit.layout.ContentPane"
+                 data-dojo-props="title: 'Property Id'">
+
+                <div data-context-query=".offerPropertyIdTextBox"
+                     data-dojo-props="value: '${propertyId}', tabIndex: 1">
+                </div>
+            </div>
+
+            <div data-dojo-type="dijit.layout.ContentPane"
+                 data-dojo-props="title: 'Creation Date'">
+
+                <div data-context-query=".offerCreationDateTextBox"
+                     data-dojo-props="value: '${creationDate}', tabIndex: 2">
+                </div>
+            </div>
+
+            <div data-dojo-type="dijit.layout.ContentPane"
+                 data-dojo-props="title: 'Offer From'">
+
+                <div data-context-query=".offerOfferFromTextBox"
+                     data-dojo-props="value: '', tabIndex: 3">
+                </div>
+            </div>
+
+            <div data-dojo-type="dijit.layout.ContentPane"
+                 data-dojo-props="title: 'Property Description'">
+
+                <div data-context-query=".offerPropertyDescriptionTextBox"
+                     data-dojo-props="value: '', tabIndex: 4">
+                </div>
+            </div>
+        </div>
+    </div>-->
+</div>
+</body>
+</html>

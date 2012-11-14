@@ -1,0 +1,453 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Property Details</title>
+</head>
+<body>
+<div class="propertyDetailsContainer"
+     data-dojo-type="dijit.layout.BorderContainer"
+     data-dojo-props="gutters:true, liveSplitters:true">
+
+    <div data-dojo-type="dijit.layout.ContentPane"
+         data-dojo-props="splitter:true, region:'top'"
+         style="text-align: center; height: 40%">
+
+        <div class="propDetailsHolder">
+            <div class="propImgHolder">
+                <!--<img src="{}" alt="Property thumbnail" title="Property thumbnail" />-->
+            </div>
+            <div class="propTextHolder">
+                <div class="propTextRow">
+                    <h1>Property #: ${propertyId}</h1>
+                    <span class="propertyStatus">
+                        <img src="${statusImgUrl}" alt="Status" title="Status" />
+                    </span>
+                </div>
+                <div class="propTextRow">
+                <div data-dojo-type="dijit.layout.AccordionContainer">
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Street'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'situatedStreet1', style:'width: 40em', value:'${situatedStreet1}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Zip'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'situatedZip', style:'width: 10em', value:'${situatedZip}', accessRoles:'CLERK'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Parcel Number'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'parcelNum', style:'width: 10em', value:'${parcelNum}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Situated City'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'situatedCity', style:'width: 20em', value:'${situatedCity}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Situated County'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'situatedCounty', style:'width: 20em', value:'${situatedCounty}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Client Id'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'clientId', style:'width: 20em', value:'${clientId}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Client Names'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'clientNames', style:'width: 20em', value:'${clientNames}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Client Address'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'clientAddress', style:'width: 40em', value:'${clientAddress}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Client Phone'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'clientPhone', style:'width: 20em', value:'${clientPhone}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Client Email'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'clientEmail', style:'width: 20em', value:'${clientEmail}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Client Notes'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'clientNotes', style:'width: 60em', value:'${clientNotes}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'MLS Number'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'mlsNum', style:'width: 10em', value:'${mlsNum}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Property Square Feet'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'propSqFt', style:'width: 10em', value:'${propSqFt}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Property Year Built'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'propYearBuilt', style:'width: 10em', value:'${propYearBuilt}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Property Style'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'propStyle', style:'width: 10em', value:'${propStyle}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Termite Repair'">
+
+                        <div data-context-query=".propDetailsPriceTextBox"
+                             data-dojo-props="name:'termiteRepair', style:'width: 10em', value:'${termiteRepair}', accessRoles:'CLERK'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Retrofit'">
+
+                        <div data-context-query=".propDetailsPriceTextBox"
+                             data-dojo-props="name:'retrofit', style:'width: 10em', value:'${retrofit}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Other Repairs'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'otherRepairs', style:'width: 10em', value:'${otherRepairs}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Total Commission'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'totalCommission', style:'width: 10em', value:'${totalCommission}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'List Percentage'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'listPercentage', style:'width: 10em', value:'${listPercentage}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Sell Percentage'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'sellPercentage', style:'width: 10em', value:'${sellPercentage}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'List Date'">
+
+                        <div data-context-query=".propDetailsDateBox"
+                             data-dojo-props="name:'listDate', style:'width: 10em', value:'${listDate}', displayedValue:'${listDate}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Exp Date'">
+
+                        <div data-context-query=".propDetailsDateBox"
+                             data-dojo-props="name:'expDate', style:'width: 10em', value:'${expDate}', displayedValue:'${expDate}', accessRoles:'CLERK'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Original LP'">
+
+                        <div data-context-query=".propDetailsPriceTextBox"
+                             data-dojo-props="name:'originalLP', style:'width: 10em', value:'${originalLP}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Current LP'">
+
+                        <div data-context-query=".propDetailsPriceTextBox"
+                             data-dojo-props="name:'currentLP', style:'width: 10em', value:'${currentLP}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Days On Market'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'daysOnMarket', style:'width: 10em', value:'${daysOnMarket}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Offer Count'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'offerCount', style:'width: 10em', value:'${offerCount}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Recent Offer Date'">
+
+                        <div data-context-query=".propDetailsDateBox"
+                             data-dojo-props="name:'recentOfferDate', style:'width: 10em', value:'${recentOfferDate}', displayedValue:'${recentOfferDate}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Highest Offer'">
+
+                        <div data-context-query=".propDetailsPriceTextBox"
+                             data-dojo-props="name:'highestOffer', style:'width: 10em', value:'${highestOffer}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Lowest Offer'">
+
+                        <div data-context-query=".propDetailsPriceTextBox"
+                             data-dojo-props="name:'lowestOffer', style:'width: 10em', value:'${lowestOffer}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Cash Offers'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'cashOffers', style:'width: 10em', value:'${cashOffers}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Conventional Offers'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'conventionalOffers', style:'width: 10em', value:'${conventionalOffers}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Fha Offers'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'fhaOffers', style:'width: 10em', value:'${fhaOffers}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Va Offers'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'vaOffers', style:'width: 10em', value:'${vaOffers}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Highest Cash'">
+
+                        <div data-context-query=".propDetailsPriceTextBox"
+                             data-dojo-props="name:'highestCash', style:'width: 10em', value:'${highestCash}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Highest Conventional'">
+
+                        <div data-context-query=".propDetailsPriceTextBox"
+                             data-dojo-props="name:'highestConventional', style:'width: 10em', value:'${highestConventional}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Highest Fha'">
+
+                        <div data-context-query=".propDetailsPriceTextBox"
+                             data-dojo-props="name:'highestFha', style:'width: 10em', value:'${highestFha}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Highest Va'">
+
+                        <div data-context-query=".propDetailsPriceTextBox"
+                             data-dojo-props="name:'highestVa', style:'width: 10em', value:'${highestVa}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Highest Down Pay'">
+
+                        <div data-context-query=".propDetailsPriceTextBox"
+                             data-dojo-props="name:'highestDownPay', style:'width: 10em', value:'${highestDownPay}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Shortest Escrow'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'shortestEscrow', style:'width: 10em', value:'${shortestEscrow}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Shortest Inspection'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'shortestInspection', style:'width: 10em', value:'${shortestInspection}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Shortest Loan'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'shortestLoan', style:'width: 10em', value:'${shortestLoan}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'From Date'">
+
+                        <div data-context-query=".propDetailsDateBox"
+                             data-dojo-props="name:'fromDate', style:'width: 10em', value:'${fromDate}', displayedValue:'${fromDate}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Thru Date'">
+
+                        <div data-context-query=".propDetailsDateBox"
+                             data-dojo-props="name:'thruDate', style:'width: 10em', value:'${thruDate}', displayedValue:'${thruDate}'">
+                        </div>
+                    </div>
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: 'Status Id'">
+
+                        <div data-context-query=".propertyDetailsTextBox"
+                             data-dojo-props="name:'statusId', style:'width: 10em', value:'${statusId}'">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-dojo-type="dijit.layout.ContentPane"
+         data-dojo-props="splitter:true, region:'center', refreshOnShow: true"
+         style="text-align: center;">
+
+        <div id="offersTabContainer-${propertyId}"
+             class="offersTabContainer"
+             data-dojo-type="dijit.layout.TabContainer">
+            <div data-dojo-type="dijit.layout.ContentPane"
+                 data-dojo-props="title: 'Property offers ${propertyId}'">
+
+                <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0"
+                     data-dojo-type="dijit.layout.BorderContainer"
+                     data-dojo-props="design: 'headline'">
+
+                    <div class="offersTopSection"
+                         data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="region: 'top'"
+                         style="height:40px; text-align: left;">
+
+
+
+                        <div data-context-query=".offerAddBtn"
+                             data-dojo-props="propertyId:'${propertyId}'"></div>
+                    </div>
+
+
+                    <div data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="splitter:true, region:'center'"
+                         style="position: absolute; top: 0; bottom: 0; left: 0; right: 0">
+                        <div id="offerGridLoader_${propertyId}" class="offerGridLoader"></div>
+
+                        <div id="offerGrid-${propertyId}"
+                             class="offerGrid"
+                             data-context-query=".offerGrid"
+                             data-dojo-props="propertyId:'${propertyId}'"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="addOfferDialog-${propertyId} addOfferPopup"
+         data-dojo-type="dijit.Dialog"
+         data-dojo-props="title:'Add Offer'">
+
+        <div id="addOfferForm-${propertyId}"
+             data-context-query=".addOfferForm"
+             data-dojo-props="baseClass: 'addOfferForm-${propertyId}'">
+            <table>
+                <tr>
+                    <th><label>Creation Date</label></th>
+                    <th>
+                        <input data-context-query=".offerFormCreationDate"/>
+                    </th>
+                    <th><label>OfferFrom</label></th>
+                    <th>
+                        <input data-context-query=".offerFormOfferFrom"/>
+                    </th>
+                    <th><label>Property Description</label></th>
+                    <th>
+                        <input data-context-query=".offerFormPropertyDescription"/>
+                    </th>
+                    <th><label>Parcel Number</label></th>
+                    <th>
+                        <input data-context-query=".offerFormParcelNum"/>
+                    </th>
+                </tr>
+                <tr>
+                    <th><label>Situated City</label></th>
+                    <th>
+                        <input data-context-query=".offerFormSituatedCity"/>
+                    </th>
+                    <th>
+                        <label>Situated County</label>
+                    </th>
+                    <th>
+                        <input data-context-query=".offerFormsituatedCounty"/>
+                    </th>
+                    <th>
+                        From Date
+                    </th>
+                    <th>
+                        <input data-context-query=".offerFormFromDate"/>
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div class="formRuttonRow">
+            <input data-context-query=".addOfferConfirmBtn"
+                   data-dojo-props="propertyId:'${propertyId}'"/>
+        </div>
+        <div class="addOfferMessBox addOfferMessBox-${propertyId}"><!--.--></div>
+    </div>
+</div>
+</body>
+</html>

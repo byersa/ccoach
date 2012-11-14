@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ats xmlns="dojobiz/ats"
+     xmlns:beans="dojobiz/context/beans"
+
+     xmlns:id="decorator://dojobiz/ats/decorators/FindByIdDecorator">
+
+    <beans:Context>
+        <TestSuite id="Help Test Suite">
+
+            <TestCase id="Navigate to Welcome page"
+                      type="functional"
+                      skip="false"
+                      page="/ccoach/control/main">
+                <Path>
+                    <DeferredSteps waitFor="welcomeView" state="downloadEnd">
+                        <StepTo id:node="helpNavLink" asWidget="false" duration="1000">
+                            <MouseClick left="true"/>
+                        </StepTo>
+                    </DeferredSteps>
+                </Path>
+            </TestCase>
+            <TestCase id="Navigate to Help page"
+                      type="functional"
+                      skip="false">
+                <Path>
+                    <DeferredSteps waitFor="helpView" state="downloadEnd">
+                        <Step delay="100"/>
+                    </DeferredSteps>
+                </Path>
+            </TestCase>
+        </TestSuite>
+    </beans:Context>
+</ats>

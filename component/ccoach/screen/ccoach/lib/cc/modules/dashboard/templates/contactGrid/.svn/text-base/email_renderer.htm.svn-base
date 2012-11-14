@@ -1,0 +1,7 @@
+<div id="emailsCell_${id}">
+    <span>
+        ${value}
+        <a class="emailLink" alt="Write an email" title="Write an email" href="mailto:${value}?subject=Email from Contract Coach&body=Hello!">
+        </a>
+    </span>
+</div>

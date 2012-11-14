@@ -1,0 +1,3 @@
+<div id="addressCell_${id}">
+    <span>${value}</span>
+</div>

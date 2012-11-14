@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/8393/ccoach/webapp/ccoach/lib/cc/modules/main/view
+END
+help.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/7677/ccoach/webapp/ccoach/lib/cc/modules/main/view/help.html
+END
+welcome.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/8318/ccoach/webapp/ccoach/lib/cc/modules/main/view/welcome.html
+END
+register.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/8388/ccoach/webapp/ccoach/lib/cc/modules/main/view/register.html
+END
+forgotPass.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/modules/main/view/forgotPass.html
+END
+signIn.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/8393/ccoach/webapp/ccoach/lib/cc/modules/main/view/signIn.html
+END

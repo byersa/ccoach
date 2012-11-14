@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<beans xmlns="dojobiz/context/beans"
+       xmlns:p="decorator://dojobiz/context/decorators/property">
+
+    <Import contextLocation="cc/contexts/dashboard/dashboardContext.xml"/>
+
+    <Context id="myAccountContext" parent="dashboardContext">
+
+        <Widget id="myAccountNameTextBox" parent="simpleValidationTextBox"
+                p:name="name"
+                p:label="Name"
+                p:style="width: 20em;"
+                p:disabled="disabled">
+            <ConstructorArg>
+                <Bean>
+                    <Property name="value" type="object" value="commonContext.provide('userInfo').name"/>
+                </Bean>
+            </ConstructorArg>
+        </Widget>
+
+        <Widget id="myAccountLastNameTextBox" parent="simpleValidationTextBox"
+                p:name="lastName"
+                p:label="Last Name"
+                p:style="width: 20em;"
+                p:disabled="disabled">
+            <ConstructorArg>
+                <Bean>
+                    <Property name="value" type="object" value="commonContext.provide('userInfo').lastName"/>
+                </Bean>
+            </ConstructorArg>
+        </Widget>
+
+        <Widget id="myAccountAgencyNameTextBox" parent="simpleValidationTextBox"
+                p:name="agencyName"
+                p:label="Agency Name"
+                p:style="width: 20em;"
+                p:disabled="disabled">
+            <ConstructorArg>
+                <Bean>
+                    <Property name="value" type="object" value="commonContext.provide('userInfo').agencyName"/>
+                </Bean>
+            </ConstructorArg>
+        </Widget>
+
+        <Widget id="myAccountUserLoginIdTextBox" parent="simpleValidationTextBox"
+                p:name="userLoginId"
+                p:label="User Login Id"
+                p:style="width: 20em;"
+                p:disabled="disabled">
+            <ConstructorArg>
+                <Bean>
+                    <Property name="value" type="object" value="commonContext.provide('userInfo').userLoginId"/>
+                </Bean>
+            </ConstructorArg>
+        </Widget>
+
+        <Widget id="myAccountPartyIdTextBox" parent="simpleValidationTextBox"
+                p:name="partyId"
+                p:label="Party Id"
+                p:style="width: 20em;">
+            <ConstructorArg>
+                <Bean>
+                    <Property name="value" type="object" value="commonContext.provide('userInfo').partyId"/>
+                </Bean>
+            </ConstructorArg>
+        </Widget>
+
+        <Widget id="myAccountRoleTextBox" parent="simpleValidationTextBox"
+                p:name="role"
+                p:label="Role"
+                p:style="width: 20em;">
+            <ConstructorArg>
+                <Bean>
+                    <Property name="value" type="object" value="commonContext.provide('userInfo').role"/>
+                </Bean>
+            </ConstructorArg>
+        </Widget>
+    </Context>
+</beans>

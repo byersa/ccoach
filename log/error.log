@@ -1,0 +1,107 @@
+0        [           main] INFO  pl.webapp.MoquiContextListener [NativeMethodAccessorImpl.java:?  ]  - Loading Moqui Webapp at [ROOT], moqui webapp name [webroot], context name [Moqui Root Webapp], located at [/tmp/winstone/byersa/moqui-1.2.0.war/]
+326      [           main] INFO  xt.ExecutionContextFactoryImpl [NativeMethodAccessorImpl.java:?  ]  - Initializing Moqui ExecutionContextFactoryImpl
+ - runtime directory [/var/dev/cc]
+ - config file [/var/dev/cc/conf/MoquiDevConf.xml]
+ - moqui.runtime property [/var/dev/cc]
+744      [           main] INFO  xt.ExecutionContextFactoryImpl [NativeMethodAccessorImpl.java:?  ]  - Added component [ccoach] at [file:/var/dev/cc/component/ccoach]
+746      [           main] INFO  xt.ExecutionContextFactoryImpl [NativeMethodAccessorImpl.java:?  ]  - Added component [mantle-usl] at [file:/var/dev/cc/mantle/mantle-usl]
+837      [           main] INFO  xt.ExecutionContextFactoryImpl [NativeMethodAccessorImpl.java:?  ]  - Added component [mantle-ubpl] at [file:/var/dev/cc/mantle/mantle-ubpl]
+837      [           main] INFO  xt.ExecutionContextFactoryImpl [NativeMethodAccessorImpl.java:?  ]  - Added component [mantle-udm] at [file:/var/dev/cc/mantle/mantle-udm]
+837      [           main] INFO  xt.ExecutionContextFactoryImpl [NativeMethodAccessorImpl.java:?  ]  - Added component [tools] at [component/tools]
+852      [           main] INFO  xt.ExecutionContextFactoryImpl [NativeMethodAccessorImpl.java:?  ]  - Added JAR from runtime/lib: mysql-connector-java-5.1.20-bin.jar
+854      [           main] INFO  xt.ExecutionContextFactoryImpl [NativeMethodAccessorImpl.java:?  ]  - Added JAR from runtime/lib: aws-java-sdk-1.3.22.jar
+2090     [           main] INFO  xt.ExecutionContextFactoryImpl [                       ?:?  ]  - Moqui CacheFacadeImpl Initialized
+2212     [           main] INFO  xt.ExecutionContextFactoryImpl [                       ?:?  ]  - Moqui LoggerFacadeImpl Initialized
+3634     [           main] INFO  i.impl.context.CacheFacadeImpl [NativeMethodAccessorImpl.java:?  ]  - Initialized new cache [resource.ftl.location]
+3844     [           main] INFO  i.impl.context.CacheFacadeImpl [NativeMethodAccessorImpl.java:?  ]  - Initialized new cache [resource.xml-actions.location]
+3847     [           main] INFO  i.impl.context.CacheFacadeImpl [NativeMethodAccessorImpl.java:?  ]  - Initialized new cache [resource.text.location]
+3849     [           main] INFO  i.impl.context.CacheFacadeImpl [NativeMethodAccessorImpl.java:?  ]  - Initialized new cache [resource.groovy.expression]
+4156     [           main] INFO  i.impl.context.CacheFacadeImpl [NativeMethodAccessorImpl.java:?  ]  - Initialized new cache [resource.gstring.location]
+4165     [           main] INFO  i.impl.context.CacheFacadeImpl [NativeMethodAccessorImpl.java:?  ]  - Initialized new cache [resource.wiki.location]
+4389     [           main] INFO  i.impl.context.CacheFacadeImpl [NativeMethodAccessorImpl.java:?  ]  - Initialized new cache [resource.groovy.location]
+4406     [           main] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [resource.javascript.location]
+4490     [           main] INFO  mpl.context.ResourceFacadeImpl [                       ?:?  ]  - Added JCR Repository [main] at [http://localhost:8081/rmi], workspace [default]
+4492     [           main] INFO  xt.ExecutionContextFactoryImpl [                       ?:?  ]  - Moqui ResourceFacadeImpl Initialized
+4517     [           main] WARN  nfig.UserTransactionServiceImp [        Slf4jLogger.java:12 ]  - No properties path set - looking for transactions.properties in classpath...
+4519     [           main] WARN  nfig.UserTransactionServiceImp [        Slf4jLogger.java:12 ]  - transactions.properties not found - looking for jta.properties in classpath...
+4526     [           main] WARN  nfig.UserTransactionServiceImp [        Slf4jLogger.java:12 ]  - Using init file: file:/tmp/winstone/byersa/moqui-1.2.0.war/WEB-INF/lib/moqui-framework-1.2.0.jar!/jta.properties
+4781     [           main] INFO  xt.ExecutionContextFactoryImpl [                       ?:?  ]  - Moqui TransactionFacadeImpl Initialized
+5013     [           main] INFO  ty.EntityDatasourceFactoryImpl [                       ?:?  ]  - Set property derby.system.home to [/var/dev/cc/db/derby]
+5064     [           main] INFO  ty.EntityDatasourceFactoryImpl [                       ?:?  ]  - Set property derby.system.home to [/var/dev/cc/db/derby]
+5160     [           main] INFO  ty.EntityDatasourceFactoryImpl [                       ?:?  ]  - Set property derby.system.home to [/var/dev/cc/db/derby]
+5185     [           main] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [entity.definition]
+5401     [           main] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [entity.location]
+5404     [           main] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [entity.sequence.bank]
+5424     [           main] INFO  xt.ExecutionContextFactoryImpl [                       ?:?  ]  - Moqui EntityFacadeImpl for DEFAULT Tenant Initialized
+5542     [           main] INFO  uartz.impl.StdSchedulerFactory [StdSchedulerFactory.java:1157]  - Using default implementation for ThreadExecutor
+5545     [           main] INFO  .quartz.simpl.SimpleThreadPool [   SimpleThreadPool.java:271]  - Job execution threads will use class loader of thread: main
+5731     [           main] INFO    org.quartz.simpl.RAMJobStore [        RAMJobStore.java:154]  - RAMJobStore initialized.
+5733     [           main] INFO  uartz.impl.StdSchedulerFactory [StdSchedulerFactory.java:1306]  - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+5734     [           main] INFO  uartz.impl.StdSchedulerFactory [StdSchedulerFactory.java:1310]  - Quartz scheduler version: 2.1.6
+5736     [           main] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [service.location]
+5775     [           main] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [service.java.class]
+6191     [           main] INFO  xt.ExecutionContextFactoryImpl [                       ?:?  ]  - Moqui ServiceFacadeImpl Initialized
+6201     [           main] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [screen.location]
+6204     [           main] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [screen.template.mode]
+6207     [           main] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [screen.template.location]
+6309     [           main] INFO  xt.ExecutionContextFactoryImpl [                       ?:?  ]  - Moqui ScreenFacadeImpl Initialized
+6666     [           main] INFO  xt.ExecutionContextFactoryImpl [                       ?:?  ]  - Moqui L10nFacadeImpl Initialized
+6677     [           main] INFO  camel.impl.DefaultCamelContext [DefaultCamelContext.java:1391]  - Apache Camel 2.10.1 (CamelContext: camel-1) is starting
+7072     [           main] INFO  ment.ManagementStrategyFactory [ManagementStrategyFactory.java:43 ]  - JMX enabled.
+8862     [           main] INFO  converter.DefaultTypeConverter [DefaultTypeConverter.java:45 ]  - Loaded 185 type converters
+9097     [           main] INFO  ultManagementLifecycleStrategy [DefaultManagementLifecycleStrategy.java:859]  - StatisticsLevel at All so enabling load performance statistics
+9107     [           main] INFO  camel.impl.DefaultCamelContext [DefaultCamelContext.java:1426]  - Total 0 routes, of which 0 is started.
+9109     [           main] INFO  camel.impl.DefaultCamelContext [DefaultCamelContext.java:1427]  - Apache Camel 2.10.1 (CamelContext: camel-1) started in 2.431 seconds
+9112     [           main] INFO  xt.ExecutionContextFactoryImpl [                       ?:?  ]  - Moqui ExecutionContextFactory Initialization Complete
+9123     [           main] INFO  pl.webapp.MoquiContextListener [                       ?:?  ]  - Loaded Moqui Execution Context Factory for webapp [ROOT]
+1371200  [ndlerThread[#3]] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [artifact.tarpit.hits]
+1371412  [ndlerThread[#3]] WARN  i.impl.entity.EntityFacadeImpl [NativeMethodAccessorImpl.java:?  ]  - No location cache found for entity-name [TenantHostDefault], reloading ALL entity file locations known.
+1371660  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [20] entity definitions in [jar:file:/tmp/winstone/byersa/moqui-1.2.0.war/WEB-INF/lib/moqui-framework-1.2.0.jar!/entity/BasicEntities.xml]
+1371674  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [8] entity definitions in [jar:file:/tmp/winstone/byersa/moqui-1.2.0.war/WEB-INF/lib/moqui-framework-1.2.0.jar!/entity/EntityEntities.xml]
+1371686  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [2] entity definitions in [jar:file:/tmp/winstone/byersa/moqui-1.2.0.war/WEB-INF/lib/moqui-framework-1.2.0.jar!/entity/OlapEntities.xml]
+1371945  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [12] entity definitions in [jar:file:/tmp/winstone/byersa/moqui-1.2.0.war/WEB-INF/lib/moqui-framework-1.2.0.jar!/entity/ScreenEntities.xml]
+1371960  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [20] entity definitions in [jar:file:/tmp/winstone/byersa/moqui-1.2.0.war/WEB-INF/lib/moqui-framework-1.2.0.jar!/entity/SecurityEntities.xml]
+1371965  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [5] entity definitions in [jar:file:/tmp/winstone/byersa/moqui-1.2.0.war/WEB-INF/lib/moqui-framework-1.2.0.jar!/entity/ServerEntities.xml]
+1371967  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [1] entity definitions in [jar:file:/tmp/winstone/byersa/moqui-1.2.0.war/WEB-INF/lib/moqui-framework-1.2.0.jar!/entity/ServiceEntities.xml]
+1371975  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [9] entity definitions in [jar:file:/tmp/winstone/byersa/moqui-1.2.0.war/WEB-INF/lib/moqui-framework-1.2.0.jar!/entity/TenantEntities.xml]
+1372226  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [27] entity definitions in [file:/var/dev/cc/mantle/mantle-udm/entity/AccountingAccountEntities.xml]
+1372434  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [27] entity definitions in [file:/var/dev/cc/mantle/mantle-udm/entity/AccountingLedgerEntities.xml]
+1372453  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [14] entity definitions in [file:/var/dev/cc/mantle/mantle-udm/entity/AccountingOtherEntities.xml]
+1372470  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [10] entity definitions in [file:/var/dev/cc/mantle/mantle-udm/entity/FacilityEntities.xml]
+1372584  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [26] entity definitions in [file:/var/dev/cc/mantle/mantle-udm/entity/HumanResourcesEntities.xml]
+1372606  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [16] entity definitions in [file:/var/dev/cc/mantle/mantle-udm/entity/MarketingEntities.xml]
+1372964  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [19] entity definitions in [file:/var/dev/cc/mantle/mantle-udm/entity/OrderEntities.xml]
+1373008  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [35] entity definitions in [file:/var/dev/cc/mantle/mantle-udm/entity/PartyEntities.xml]
+1373204  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [21] entity definitions in [file:/var/dev/cc/mantle/mantle-udm/entity/ProductAssetEntities.xml]
+1373591  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [40] entity definitions in [file:/var/dev/cc/mantle/mantle-udm/entity/ProductDefinitionEntities.xml]
+1373610  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [9] entity definitions in [file:/var/dev/cc/mantle/mantle-udm/entity/ProductStoreEntities.xml]
+1373639  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [15] entity definitions in [file:/var/dev/cc/mantle/mantle-udm/entity/RequestEntities.xml]
+1373972  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [10] entity definitions in [file:/var/dev/cc/mantle/mantle-udm/entity/SalesEntities.xml]
+1374010  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [21] entity definitions in [file:/var/dev/cc/mantle/mantle-udm/entity/ShipmentEntities.xml]
+1374128  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [19] entity definitions in [file:/var/dev/cc/mantle/mantle-udm/entity/WorkEffortEntities.xml]
+1375173  [ndlerThread[#3]] WARN  os.jdbc.AbstractDataSourceBean [        Slf4jLogger.java:12 ]  - AtomikosDataSoureBean 'DEFAULTtransactional': no testQuery set - the connection pool will not be able to validate the connections!
+1382387  [ndlerThread[#3]] INFO  moqui.impl.entity.EntityDbMeta [                       ?:?  ]  - Checked table for entity [DbViewEntity] in 7.218 seconds
+1383316  [ndlerThread[#3]] INFO  i.impl.entity.EntityFacadeImpl [                       ?:?  ]  - Found [1] view-entity definitions in database (moqui.entity.DbViewEntity)
+1383338  [ndlerThread[#3]] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [entity.DEFAULT.one.TenantHostDefault]
+1383613  [ndlerThread[#3]] WARN  os.jdbc.AbstractDataSourceBean [        Slf4jLogger.java:12 ]  - AtomikosDataSoureBean 'DEFAULTtenantcommon': no testQuery set - the connection pool will not be able to validate the connections!
+1386460  [ndlerThread[#3]] INFO  moqui.impl.entity.EntityDbMeta [                       ?:?  ]  - Checked table for entity [TenantHostDefault] in 2.848 seconds
+1387854  [ndlerThread[#3]] INFO  nfig.IniSecurityManagerFactory [IniSecurityManagerFactory.java:107]  - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+1389156  [ndlerThread[#3]] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [entity.DEFAULT.list.moqui.entity.UserField]
+1389168  [ndlerThread[#3]] INFO  moqui.impl.entity.EntityDbMeta [                       ?:?  ]  - Checked table for entity [UserField] in 0.007 seconds
+1389263  [ndlerThread[#3]] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [entity.DEFAULT.list_ra.moqui.entity.UserField]
+1389531  [ndlerThread[#3]] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [entity.DEFAULT.list.moqui.security.ArtifactAuthzCheckView]
+1389688  [ndlerThread[#3]] INFO  moqui.impl.entity.EntityDbMeta [                       ?:?  ]  - Checked table for entity [ArtifactAuthz] in 0.013 seconds
+1389786  [ndlerThread[#3]] INFO  moqui.impl.entity.EntityDbMeta [                       ?:?  ]  - Checked table for entity [ArtifactGroupMember] in 0.096 seconds
+1389797  [ndlerThread[#3]] INFO  moqui.impl.entity.EntityDbMeta [                       ?:?  ]  - Checked table for entity [ArtifactAuthzRecord] in 0.009 seconds
+1389901  [ndlerThread[#3]] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [entity.DEFAULT.list_ra.moqui.security.ArtifactAuthz]
+1389906  [ndlerThread[#3]] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [entity.DEFAULT.list_ra.moqui.security.ArtifactGroupMember]
+1389911  [ndlerThread[#3]] INFO  i.impl.context.CacheFacadeImpl [                       ?:?  ]  - Initialized new cache [entity.DEFAULT.list_ra.moqui.security.ArtifactAuthzRecord]
+1390125  [ndlerThread[#3]] INFO  moqui.impl.entity.EntityDbMeta [                       ?:?  ]  - Checked table for entity [SequenceValueItem] in 0.008 seconds
+1391267  [ndlerThread[#3]] INFO  moqui.impl.entity.EntityDbMeta [                       ?:?  ]  - Checked table for entity [Visit] in 0.013 seconds
+1391417  [ndlerThread[#3]] INFO  ui.impl.context.UserFacadeImpl [                       ?:?  ]  - Created new Visit with ID [105100] in session [87576e29a5f0c39d2eaf2a73da5c1d89]
+1391862  [ndlerThread[#3]] WARN  i.impl.screen.ScreenDefinition [NativeMethodAccessorImpl.java:?  ]  - subscreenRef.location (w): component://ccoach/screen/ccoach/Login.xml
+1391893  [ndlerThread[#3]] WARN  i.impl.screen.ScreenDefinition [NativeMethodAccessorImpl.java:?  ]  - subscreenRef.location (w): component://ccoach/screen/ccoach/status.xml
+1391898  [ndlerThread[#3]] WARN  i.impl.screen.ScreenDefinition [NativeMethodAccessorImpl.java:?  ]  - subscreenRef.location (w): component://ccoach/screen/ccoach/main.xml
+1392918  [ndlerThread[#3]] WARN  i.impl.screen.ScreenDefinition [NativeMethodAccessorImpl.java:?  ]  - subscreenRef.location (w): component://ccoach/screen/ccoach/Login.xml
+1392930  [ndlerThread[#3]] WARN  i.impl.screen.ScreenDefinition [NativeMethodAccessorImpl.java:?  ]  - subscreenRef.location (w): component://ccoach/screen/ccoach/status.xml
+1393027  [ndlerThread[#3]] WARN  i.impl.screen.ScreenDefinition [NativeMethodAccessorImpl.java:?  ]  - subscreenRef.location (w): component://ccoach/screen/ccoach/main.xml

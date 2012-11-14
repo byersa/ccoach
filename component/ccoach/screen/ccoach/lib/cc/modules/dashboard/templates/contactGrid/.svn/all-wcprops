@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/7883/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/contactGrid
+END
+lastName_renderer.htm
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/7845/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/contactGrid/lastName_renderer.htm
+END
+address_renderer.htm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/7845/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/contactGrid/address_renderer.htm
+END
+email_renderer.htm
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/7883/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/contactGrid/email_renderer.htm
+END
+skype_renderer.htm
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/7845/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/contactGrid/skype_renderer.htm
+END
+offerActivity_renderer.htm
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/7845/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/contactGrid/offerActivity_renderer.htm
+END
+name_renderer.htm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/7829/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/contactGrid/name_renderer.htm
+END
+phoneNumber_renderer.htm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/7845/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/contactGrid/phoneNumber_renderer.htm
+END

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<beans xmlns="dojobiz/context/beans">
+
+    <Import contextLocation="cc/contexts/main/welcomeContext.xml"/>
+
+    <Context id="commonContext" parent="welcomeContext">
+
+        <!-- PROTOTYPES -->
+        <Prototype id="wiringFormProto" type="dijit/form/Form"/>
+
+        <Prototype id="wiringPopupProto" type="dijit/Dialog"/>
+
+        <Prototype id="simpleValidationTextBox" type="dijit/form/ValidationTextBox"/>
+
+        <Prototype id="roleDependedValidationTextBox" type="cc/widgets/RoleDependedValidationTextBox"/>
+        <Prototype id="roleDependedCurrencyValidationTextBox" type="cc/widgets/RoleDependedCurrencyValidationTextBox"/>
+        <Prototype id="roleDependedValidationDateBox" type="cc/widgets/RoleDependedValidationDateBox"/>
+
+        <Prototype id="linkButtonProto" type="cc/widgets/navigation/LinkButton"/>
+
+        <Prototype id="enhancedGrid" type="dojox/grid/EnhancedGrid"/>
+
+        <!-- VALIDATIONS -->
+        <Bean id="validationUtils" type="cc/modules/main/utils/ValidationUtils"/>
+
+        <!-- ENTITIES (REMOTE CLASSES)-->
+        <Bean id="userInfo" type="cc/internal/User"/>
+    </Context>
+</beans>

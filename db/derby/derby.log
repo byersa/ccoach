@@ -1,0 +1,1114 @@
+----------------------------------------------------------------
+Tue Oct 09 14:06:10 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-4722-6e60-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@2d342ba4 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 09 14:06:18 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance ed8940a7-013a-4722-6e60-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@2d342ba4 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+The XA transaction timed out and is going to be rolled back. The transaction Xid is (1096044365,3132372e302e302e312e746d30303034363030303031,3132372e302e302e312e746d3531).
+----------------------------------------------------------------
+Tue Oct 09 14:14:52 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-472a-6651-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader MoquiStart@d0b4b2f 
+Loaded from file:/var/dev/moqui-src/moqui-1.1.2.war
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+The XA transaction timed out and is going to be rolled back. The transaction Xid is (1096044365,3132372e302e302e312e746d30303037303030303032,3132372e302e302e312e746d3634).
+----------------------------------------------------------------
+Tue Oct 09 14:16:13 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance eb82544f-013a-472a-6651-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader MoquiStart@d0b4b2f 
+Loaded from file:/var/dev/moqui-src/moqui-1.1.2.war
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 11 16:14:48 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-51e4-eccb-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@46b8c8e6 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 11 16:15:01 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-51e4-eccb-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@46b8c8e6 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+The XA transaction timed out and is going to be rolled back. The transaction Xid is (1096044365,3132372e302e302e312e746d30303038343030303034,3132372e302e302e312e746d3834).
+----------------------------------------------------------------
+Thu Oct 11 19:03:50 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-527f-ae32-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@78dc6a77 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 11 19:03:56 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-527f-ae32-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@78dc6a77 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 11 20:41:04 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-52d8-b457-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 11 20:41:09 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-52d8-b457-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 11 20:58:25 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-52e8-9575-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@3f77b3cd 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 11 20:58:31 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-52e8-9575-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@3f77b3cd 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 18 10:27:53 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-74b3-d51b-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@210a6ae2 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 18 10:28:01 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-74b3-d51b-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@210a6ae2 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 18 14:06:12 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-757b-b594-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 18 14:06:20 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-757b-b594-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 09:00:37 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-88fd-5d7b-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 09:00:44 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-88fd-5d7b-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 11:22:07 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-897e-ebfd-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 11:22:16 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-897e-ebfd-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 11:38:57 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-898e-5511-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@46b8c8e6 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 11:39:05 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-898e-5511-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@46b8c8e6 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 11:57:10 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-899f-00de-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@210a6ae2 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 11:57:16 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-899f-00de-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@210a6ae2 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 12:27:45 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-89bb-0150-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader MoquiStart@d0b4b2f 
+Loaded from file:/var/dev/moqui-src/moqui-1.1.2.war
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 12:28:44 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance eb7c52a2-013a-89bb-0150-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader MoquiStart@d0b4b2f 
+Loaded from file:/var/dev/moqui-src/moqui-1.1.2.war
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 12:47:44 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-89cd-4f2d-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 12:47:52 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-89cd-4f2d-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 13:19:22 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-89ea-41fa-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 13:19:27 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-89ea-41fa-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 14:09:16 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-8a17-f2bb-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Oct 22 14:09:22 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-8a17-f2bb-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 23 00:20:25 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-8c47-78d9-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@44b01d43 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 23 00:20:31 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-8c47-78d9-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@44b01d43 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 23 00:26:33 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-8c4d-15db-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 23 00:26:38 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-8c4d-15db-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 23 01:23:07 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-8c80-e230-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@210a6ae2 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 23 01:23:13 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-8c80-e230-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@210a6ae2 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 23 01:36:07 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-8c8c-c8c3-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 23 01:36:13 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-8c8c-c8c3-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+The XA transaction timed out and is going to be rolled back. The transaction Xid is (1096044365,3132372e302e302e312e746d30303036333030303331,3132372e302e302e312e746d3633).
+----------------------------------------------------------------
+Tue Oct 23 02:50:38 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-8cd1-00e1-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@78dc6a77 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 23 02:50:43 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-8cd1-00e1-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@78dc6a77 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 23 02:55:47 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-8cd5-b58b-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@210a6ae2 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 23 02:55:53 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-8cd5-b58b-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@210a6ae2 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 23 03:03:15 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-8cdc-8d82-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@50c4fe76 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 23 03:03:20 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-8cdc-8d82-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@50c4fe76 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Oct 24 00:16:28 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-916a-3733-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@210a6ae2 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Oct 24 00:16:34 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-916a-3733-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@210a6ae2 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Oct 24 15:56:06 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-94c6-79d8-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Oct 24 15:56:12 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-94c6-79d8-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Oct 24 17:57:18 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-9535-6fe1-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@351e1e67 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Oct 24 17:57:23 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-9535-6fe1-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@351e1e67 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Oct 24 18:07:20 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-953e-9fc0-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@210a6ae2 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Oct 24 18:07:26 MDT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-953e-9fc0-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@210a6ae2 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 30 04:14:09 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-b160-ea9b-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 30 04:14:14 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-b160-ea9b-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 30 10:23:45 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-b2b3-4a27-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@46b8c8e6 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Oct 30 10:23:51 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-b2b3-4a27-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@46b8c8e6 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Oct 31 13:18:46 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-b879-e1de-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Oct 31 13:18:58 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-b879-e1de-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Oct 31 15:16:56 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-b8e6-107a-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Oct 31 15:17:03 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-b8e6-107a-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 00:37:27 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-bae7-3a28-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 00:37:30 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance e03f4017-013a-bae7-3a28-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 13:31:35 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-bdab-f942-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 13:31:41 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-bdab-f942-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 15:50:49 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-be2b-727f-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 15:51:00 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-be2b-727f-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 16:25:55 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-be4b-956e-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 16:26:04 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-be4b-956e-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 16:31:28 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-be50-a9ce-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 16:31:34 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-be50-a9ce-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 17:04:31 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-be6e-ed8d-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@939b78e 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 17:04:37 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-be6e-ed8d-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@939b78e 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 23:23:41 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-bfca-0f2e-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@2d342ba4 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 23:23:46 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-bfca-0f2e-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@2d342ba4 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 23:29:45 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-bfcf-9ce8-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 23:29:50 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-bfcf-9ce8-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 23:41:37 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-bfda-784d-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 01 23:41:44 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-bfda-784d-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Nov 02 00:41:47 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-c011-8ef0-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@78dc6a77 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Nov 02 00:41:52 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-c011-8ef0-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@78dc6a77 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Nov 02 07:42:13 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-c192-799e-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Nov 02 07:42:20 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-c192-799e-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Nov 02 15:56:55 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-c357-62e3-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@2d342ba4 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Nov 02 15:57:02 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-c357-62e3-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@2d342ba4 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Nov 05 19:03:46 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-d375-8ab2-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Nov 05 19:03:56 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-d375-8ab2-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Nov 05 19:28:42 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-d38c-5b17-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@3f77b3cd 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Nov 05 19:28:48 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-d38c-5b17-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@3f77b3cd 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Nov 05 19:36:07 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-d393-2685-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@423e5d1 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Nov 05 19:36:12 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance e03f4017-013a-d393-2685-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@423e5d1 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 06 09:53:57 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-d6a4-8345-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 06 09:54:11 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-d6a4-8345-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 06 17:36:02 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-d84b-903f-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@423e5d1 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 06 17:36:10 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-d84b-903f-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@423e5d1 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 06 22:05:54 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-d942-a3ac-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 06 22:06:03 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-d942-a3ac-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@1b016632 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 08 09:57:33 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-e0f4-884e-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 08 09:57:43 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-e0f4-884e-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 08 12:21:46 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-e178-92b9-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 08 12:21:54 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-e178-92b9-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@35549f94 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 13 00:49:57 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-f8be-fc9a-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@2d342ba4 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 13 00:57:12 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-f8c5-9fb5-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@3c1d332b 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 13 08:57:11 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-fa7d-0ef0-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader MoquiStart@d0b4b2f 
+Loaded from file:/var/dev/moqui-src/moqui-1.1.2.war
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 13 13:48:07 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-fb87-6b25-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@46b8c8e6 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 13 13:48:14 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-fb87-6b25-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@46b8c8e6 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 13 14:16:37 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-013a-fba1-849c-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@744a6cbf 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 13 14:16:43 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance b8450018-013a-fba1-849c-0000600504b4 
+on database directory /var/dev/moqui-src/runtime/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@744a6cbf 
+Loaded from file:/tmp/winstone/byersa/moqui-1.1.2.war/WEB-INF/lib/derby-10.8.2.2.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/moqui-src/runtime/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Nov 14 09:33:37 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-013a-ffc4-c675-0000239025b5 
+on database directory /var/dev/cc/db/derby/MoquiTransactional  with class loader winstone.classLoader.WebappClassLoader@46b8c8e6 
+Loaded from file:/tmp/winstone/byersa/moqui-1.2.0.war/WEB-INF/lib/derby-10.9.1.0.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/cc/db/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Nov 14 09:33:44 MST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance 6b91c056-013a-ffc4-c675-0000239025b5 
+on database directory /var/dev/cc/db/derby/MoquiTenant  with class loader winstone.classLoader.WebappClassLoader@46b8c8e6 
+Loaded from file:/tmp/winstone/byersa/moqui-1.2.0.war/WEB-INF/lib/derby-10.9.1.0.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_32-b05
+user.dir=/var/dev/moqui-src
+derby.system.home=/var/dev/cc/db/derby
+Database Class Loader started - derby.database.classpath=''

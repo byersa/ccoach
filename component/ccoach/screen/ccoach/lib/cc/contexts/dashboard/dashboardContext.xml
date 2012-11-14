@@ -1,0 +1,1319 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<beans xmlns="dojobiz/context/beans"
+       xmlns:p="decorator://dojobiz/context/decorators/property"
+       xmlns:idref="decorator://dojobiz/context/decorators/reference">
+
+    <Import contextLocation="cc/contexts/commonContext.xml"/>
+    <Import contextLocation="cc/contexts/services.xml"/>
+
+    <Context id="dashboardContext" parent="commonContext, services">
+
+        <!-- CONTROLLERS -->
+        <Bean id="propertyController"
+              type="cc/modules/dashboard/presenters/PropertyPresenter"
+              idref:validator="validationUtils"/>
+
+        <Bean id="offerController"
+              type="cc/modules/dashboard/presenters/OfferPresenter"
+              idref:validator="validationUtils"/>
+
+        <!-- STORES -->
+        <Bean id="offerStore" type="dojo/data/ObjectStore">
+            <Property name="objectStore">
+                <Bean type="dojo/store/Memory"/>
+            </Property>
+        </Bean>
+
+        <Bean id="propertyStore" type="dojo/data/ObjectStore">
+            <Property name="objectStore">
+                <Bean type="cc/modules/dashboard/utils/PorpertyMemoryStore">
+                    <ConstructorArg>
+                        <Bean>
+                            <Property name="url" type="string"
+                                      value="/ccoach/control/jsonservice?serviceName=getPropertyList&amp;partyId=${partyId}"/>
+                        </Bean>
+                    </ConstructorArg>
+                </Bean>
+            </Property>
+        </Bean>
+
+        <Widget name="offerGrid" parent="enhancedGrid">
+            <Listener event="onRowDblClick" handler="handleRowDblClick" bean="offerController"/>
+            <ConstructorArg>
+                <Bean idref:store="offerStore">
+                    <Property name="canSort" type="function" value="function(){return false;}"/>
+                    <Property name="structure">
+                        <BeanGroup type="dojobiz/context/misc/ColumnGroup">
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="offerId"
+                                  p:name="ID"
+                                  p:width="55px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/offerId_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="propertyId"
+                                  p:name="Property Id"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="creationDate"
+                                  p:name="Creation Date"
+                                  p:styles="text-align:center;"
+                                  p:changeValueView="fromObjectDate">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="offerFrom"
+                                  p:name="Offer From"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="propertyDescription"
+                                  p:name="Property Description"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="parcelNum"
+                                  p:name="Parcel Number"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="situatedCity"
+                                  p:name="Situated City"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="situatedCounty"
+                                  p:name="Situated County"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="fromDate"
+                                  p:name="From Date"
+                                  p:styles="text-align:center;"
+                                  p:changeValueView="fromObjectDate">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                        </BeanGroup>
+                    </Property>
+                </Bean>
+            </ConstructorArg>
+        </Widget>
+
+        <!-- PROPERTY GRID -->
+        <Widget id="propertyGrid" parent="enhancedGrid">
+            <Listener event="onRowDblClick" handler="handleRowDblClick" bean="propertyController"/>
+            <ConstructorArg>
+                <Bean idref:store="propertyStore">
+                    <Property name="canSort" type="function" value="function(){return false;}"/>
+                    <Property name="rowSelector" value="30px"/>
+                    <Property name="plugins">
+                        <Bean>
+                            <Property name="indirectSelection">
+                                <Bean>
+                                    <ConstructorArg>
+                                        <Bean p:headerSelector="true"
+                                              p:styles="text-align: center;"/>
+                                    </ConstructorArg>
+                                </Bean>
+                            </Property>
+                            <Property name="selector">
+                                <Bean>
+                                    <ConstructorArg>
+                                        <Bean p:row="multi" p:col="single" p:cell="false"/>
+                                    </ConstructorArg>
+                                </Bean>
+                            </Property>
+                        </Bean>
+                    </Property>
+                    <Property name="structure">
+                        <BeanGroup type="dojobiz/context/misc/ColumnGroup">
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="propertyId"
+                                  p:name="ID"
+                                  p:width="55px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/id_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="situatedStreet1"
+                                  p:name="Street"
+                                  p:width="120px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="situatedZip"
+                                  p:name="Zip"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="parcelNum"
+                                  p:name="Parcel Number"
+                                  p:width="110px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="situatedCity"
+                                  p:name="City"
+                                  p:width="125px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="situatedCounty"
+                                  p:name="Situated County"
+                                  p:width="130px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="clientId"
+                                  p:name="Client ID"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="clientNames"
+                                  p:name="Client Names"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="clientAddress"
+                                  p:name="Client Address"
+                                  p:width="260px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="clientPhone"
+                                  p:name="Client Phone"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="clientEmail"
+                                  p:name="Client Email"
+                                  p:width="200px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/clientEmail_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="clientNotes"
+                                  p:name="Client Notes"
+                                  p:width="220px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="mlsNum"
+                                  p:name="MLS Number"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="propSqFt"
+                                  p:name="Property Square Feet"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="propYearBuilt"
+                                  p:name="Property YearBuilt"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="propStyle"
+                                  p:name="Property Style"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="termiteRepair"
+                                  p:name="Termite Repair"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/priceValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="retrofit"
+                                  p:name="Retrofit"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/priceValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="otherRepairs"
+                                  p:name="Other Repairs"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/priceValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="totalCommission"
+                                  p:name="Total Commission"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/percentValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="listPercentage"
+                                  p:name="List Percentage"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/percentValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="sellPercentage"
+                                  p:name="Sell Percentage"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/percentValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="listDate"
+                                  p:name="List Date"
+                                  p:styles="text-align:center;"
+                                  p:changeValueView="fromStringDate">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="expDate"
+                                  p:name="Expiration date"
+                                  p:styles="text-align:center;"
+                                  p:changeValueView="fromStringDate">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="originalLP"
+                                  p:name="Original Listing Price"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/priceValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="currentLP"
+                                  p:name="Current Listing Price"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/priceValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="daysOnMarket"
+                                  p:name="Days On Market"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="offerCount"
+                                  p:name="Offer Count"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="recentOfferDate"
+                                  p:name="Recent Offer Date"
+                                  p:styles="text-align:center;"
+                                  p:changeValueView="fromStringDate">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="highestOffer"
+                                  p:name="Highest Offer"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/priceValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="lowestOffer"
+                                  p:name="Lowest Offer"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/priceValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="cashOffers"
+                                  p:name="Cash Offers"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="conventionalOffers"
+                                  p:name="Conventional Offers"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="fhaOffers"
+                                  p:name="FHA Offers"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="vaOffers"
+                                  p:name="VA Offers"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="highestCash"
+                                  p:name="Highest Cash"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/priceValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="highestConventional"
+                                  p:name="Highest Conventional"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/priceValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="highestFha"
+                                  p:name="Highest FHA"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/priceValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="highestVa"
+                                  p:name="Highest VA"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/priceValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="highestDownPay"
+                                  p:name="Highest Down Pay"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/priceValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="shortestEscrow"
+                                  p:name="Shortest Escrow"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="shortestInspection"
+                                  p:name="Shortest Inspection"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="shortestLoan"
+                                  p:name="Shortest Loan"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="fromDate"
+                                  p:name="From Date"
+                                  p:styles="text-align:center;"
+                                  p:changeValueView="fromObjectDate">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="thruDate"
+                                  p:name="Thru Date"
+                                  p:styles="text-align:center;"
+                                  p:changeValueView="fromObjectDate">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="statusId"
+                                  p:name="Status Id"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                        </BeanGroup>
+                    </Property>
+                </Bean>
+            </ConstructorArg>
+        </Widget>
+
+        <!-- PROPERTY DETAILS PAGE INPUTS -->
+        <Widget
+                id="simpleCurrencyTextBox"
+                name="simpleCurrencyTextBox"
+                type="dijit/form/CurrencyTextBox"
+
+                p:currency="USD"
+                p:constraints="{min:0.00, max:100000000.00, places:0}"/>
+
+        <Widget name="propertyDetailsTextBox" parent="roleDependedValidationTextBox">
+        </Widget>
+
+        <Widget name="propDetailsPriceTextBox" parent="roleDependedCurrencyValidationTextBox">
+        </Widget>
+
+        <Widget name="propDetailsDateBox"
+                parent="roleDependedValidationDateBox"
+                p:constraints="{ datePattern : 'MM/dd/yyyy' }"
+                p:invalidMessage="Invalid date format. Use MM/dd/yyyy"
+                p:promptMessage="MM/dd/yyyy">
+        </Widget>
+
+        <Widget name="offerPropertyIdTextBox" parent="simpleValidationTextBox"
+                p:name="propertyId"
+                p:label="Property Id"
+                p:style="width: 5em;"
+                p:disabled="disabled">
+        </Widget>
+
+        <Widget name="offerCreationDateTextBox" parent="simpleValidationTextBox"
+                p:name="creationDate"
+                p:label="Creation Date"
+                p:style="width: 10em;"
+                p:disabled="disabled">
+        </Widget>
+
+        <Widget name="offerOfferFromTextBox" parent="simpleValidationTextBox"
+                p:name="offerFrom"
+                p:label="Offer From"
+                p:style="width: 40em;">
+        </Widget>
+
+        <Widget name="offerPropertyDescriptionTextBox" parent="simpleValidationTextBox"
+                p:name="propertyDescription"
+                p:label="PropertyDescription"
+                p:style="width: 40em;">
+        </Widget>
+
+        <Widget id="propertyActivationDropDown"
+                type="dijit/form/Select">
+            <ConstructorArg>
+                <Bean p:style="width: 150px; margin-top:0px">
+                    <Property name="options">
+                        <BeanGroup>
+                            <Bean p:disabled="false"
+                                  p:label="Activate"
+                                  p:value="Active"
+                                  p:selected="true"/>
+                            <Bean p:disabled="false"
+                                  p:label="Deactivate"
+                                  p:value="Not active"
+                                  p:selected="false"/>
+                        </BeanGroup>
+                    </Property>
+                </Bean>
+            </ConstructorArg>
+            <Listener event="onChange"
+                      bean="propertyController"
+                      handler="handleActivationChange"/>
+        </Widget>
+
+        <Widget id="propertyAddBtn" type="dijit/form/Button">
+            <Property name="label" value="Add Property"/>
+            <Listener event="onClick"
+                      bean="propertyController"
+                      handler="handleAddButtonClick"/>
+        </Widget>
+
+        <Widget id="addPropertyPopup"
+                type="dijit/Dialog"
+                p:title="Add Property"/>
+
+        <Widget id="addPropertyForm"
+                type="dijit/form/Form"
+                p:action="javascript://nop"/>
+
+        <Widget name="addOfferForm"
+                type="dijit/form/Form"
+                p:action="javascript://nop"
+                p:style="max-height: 300px; overflow: auto; border: 1px solid #D5C8A9; padding-top: 15px;"
+                p:class="addOfferForm"/>
+
+        <Widget name="propertyFormStreet"
+                         parent="simpleValidationTextBox"
+                         p:name="situatedStreet1"
+                         p:label="Street"
+                         p:form="addProperty"
+                         p:promptMessage="Enter Street.">
+
+        <Listener event="onValidate"
+                  handler="validateSituatedStreet1"
+                  bean="propertyController"
+                  after="updateSituatedStreet1ValidationStatus"/>
+    </Widget>
+
+        <Widget name="propertyFormZip"
+                parent="simpleValidationTextBox"
+                p:name="situatedZip"
+                p:label="Zip"
+                p:form="addProperty"
+                p:promptMessage="Enter Zip.">
+
+            <Listener event="onValidate"
+                      handler="validateSituatedZip"
+                      bean="propertyController"
+                      after="updateSituatedZipValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormParcelNum"
+                parent="simpleValidationTextBox"
+                p:name="parcelNum"
+                p:label="Parcel Number"
+                p:form="addProperty"
+                p:promptMessage="Enter Parcel Number.">
+
+            <Listener event="onValidate"
+                      handler="validateParcelNum"
+                      bean="propertyController"
+                      after="updateParcelNumValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormCity"
+                parent="simpleValidationTextBox"
+                p:name="situatedCity"
+                p:label="City"
+                p:form="addProperty"
+                p:promptMessage="Enter City.">
+
+            <Listener event="onValidate"
+                      handler="validateSituatedCity"
+                      bean="propertyController"
+                      after="updateSituatedCityValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormSituatedCounty"
+                parent="simpleValidationTextBox"
+                p:name="situatedCounty"
+                p:label="Situated County"
+                p:form="addProperty"
+                p:promptMessage="Enter Situated County.">
+
+            <Listener event="onValidate"
+                      handler="validateSituatedCounty"
+                      bean="propertyController"
+                      after="updateSituatedCountyValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormClientId"
+                parent="simpleValidationTextBox"
+                p:name="clientId"
+                p:label="Client Id"
+                p:form="addProperty"
+                p:promptMessage="Enter Client Id.">
+
+            <Listener event="onValidate"
+                      handler="validateClientId"
+                      bean="propertyController"
+                      after="updateClientIdValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormClientNames"
+                parent="simpleValidationTextBox"
+                p:name="clientNames"
+                p:label="Client Names"
+                p:form="addProperty"
+                p:promptMessage="Enter Client Names.">
+
+            <Listener event="onValidate"
+                      handler="validateClientNames"
+                      bean="propertyController"
+                      after="updateClientNamesValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormClientAddress"
+                parent="simpleValidationTextBox"
+                p:name="clientAddress"
+                p:label="Client Address"
+                p:form="addProperty"
+                p:promptMessage="Enter Client Address.">
+
+            <Listener event="onValidate"
+                      handler="validateClientAddress"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormClientPhone"
+                parent="simpleValidationTextBox"
+                p:name="clientPhone"
+                p:label="Client Phone"
+                p:form="addProperty"
+                p:promptMessage="Enter Client Phone.">
+
+            <Listener event="onValidate"
+                      handler="validateClientPhone"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormClientEmail"
+                parent="simpleValidationTextBox"
+                p:name="clientEmail"
+                p:label="Client Email"
+                p:form="addProperty"
+                p:promptMessage="Enter Client Email.">
+
+            <Listener event="onValidate"
+                      handler="validateClientEmail"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormClientNotes"
+                parent="simpleValidationTextBox"
+                p:name="clientNotes"
+                p:label="Client Notes"
+                p:form="addProperty"
+                p:promptMessage="Enter Client Notes.">
+
+            <Listener event="onValidate"
+                      handler="validateClientNotes"
+                      bean="propertyController"
+                      after="updateClientNotesValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormMlsNum"
+                parent="simpleValidationTextBox"
+                p:name="mlsNum"
+                p:label="MLS Number"
+                p:form="addProperty"
+                p:promptMessage="Enter MLS Number.">
+
+            <Listener event="onValidate"
+                      handler="validateMlsNum"
+                      bean="propertyController"
+                      after="updateMlsNumValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormPropSqFt"
+                parent="simpleValidationTextBox"
+                p:name="propSqFt"
+                p:label="Property Square Feet"
+                p:form="addProperty"
+                p:promptMessage="Enter Property Square Feet.">
+
+            <Listener event="onValidate"
+                      handler="validatePropSqFt"
+                      bean="propertyController"
+                      after="updatePropSqFtValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormPropYearBuilt"
+                parent="simpleValidationTextBox"
+                p:name="propYearBuilt"
+                p:label="Property Year Built"
+                p:form="addProperty"
+                p:promptMessage="Enter Property Year Built.">
+
+            <Listener event="onValidate"
+                      handler="validatePropYearBuilt"
+                      bean="propertyController"
+                      after="updatePropYearBuiltValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormPropStyle"
+                parent="simpleValidationTextBox"
+                p:name="propStyle"
+                p:label="Property Style"
+                p:form="addProperty"
+                p:promptMessage="Enter Property Style.">
+
+            <Listener event="onValidate"
+                      handler="validatePropStyle"
+                      bean="propertyController"
+                      after="updatePropStyleValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormTermiteRepair"
+                parent="simpleValidationTextBox"
+                p:name="termiteRepair"
+                p:label="Termite Repair"
+                p:form="addProperty"
+                p:promptMessage="Enter Termite Repair."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateTermiteRepair"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormRetrofit"
+                parent="simpleValidationTextBox"
+                p:name="retrofit"
+                p:label="Retrofit"
+                p:form="addProperty"
+                p:promptMessage="Enter Retrofit."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateRetrofit"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormOtherRepairs"
+                parent="simpleValidationTextBox"
+                p:name="otherRepairs"
+                p:label="Other Repairs"
+                p:form="addProperty"
+                p:promptMessage="Enter Other Repairs."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateOtherRepairs"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormTotalCommission"
+                parent="simpleValidationTextBox"
+                p:name="totalCommission"
+                p:label="Total Commission"
+                p:form="addProperty"
+                p:promptMessage="Enter Total Commission.">
+
+            <Listener event="onValidate"
+                      handler="validateTotalCommission"
+                      bean="propertyController"
+                      after="updateTotalCommissionValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormListPercentage"
+                parent="simpleValidationTextBox"
+                p:name="listPercentage"
+                p:label="List Percentage"
+                p:form="addProperty"
+                p:promptMessage="Enter List Percentage.">
+
+            <Listener event="onValidate"
+                      handler="validateListPercentage"
+                      bean="propertyController"
+                      after="updateListPercentageValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormSellPercentage"
+                parent="simpleValidationTextBox"
+                p:name="sellPercentage"
+                p:label="Sell Percentage"
+                p:form="addProperty"
+                p:promptMessage="Enter Sell Percentage.">
+
+            <Listener event="onValidate"
+                      handler="validateSellPercentage"
+                      bean="propertyController"
+                      after="updateSellPercentageValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormListDate"
+                type="dijit/form/DateTextBox"
+                p:name="listDate"
+                p:constraints="{ datePattern : 'MM/dd/yyyy' }"
+                p:invalidMessage="Invalid date format. Use MM/dd/yyyy"
+                p:label="List Date"
+                p:form="addProperty"
+                p:promptMessage="MM/dd/yyyy"
+                p:value="now">
+
+            <Listener event="onValidate"
+                      handler="validateListDate"
+                      bean="propertyController"
+                      after="updateListDateValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormExpDate"
+                type="dijit/form/DateTextBox"
+                p:name="expDate"
+                p:constraints="{ datePattern : 'MM/dd/yyyy' }"
+                p:invalidMessage="Invalid date format. Use MM/dd/yyyy"
+                p:label="Expiration Date"
+                p:form="addProperty"
+                p:promptMessage="MM/dd/yyyy"
+                p:value="now">
+
+            <Listener event="onValidate"
+                      handler="validateExpDate"
+                      bean="propertyController"
+                      after="updateExpDateValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormOriginalLP"
+                parent="simpleValidationTextBox"
+                p:name="originalLP"
+                p:label="Original Listing Price"
+                p:form="addProperty"
+                p:promptMessage="Original Listing Price.">
+
+            <Listener event="onValidate"
+                      handler="validateOriginalLP"
+                      bean="propertyController"
+                      after="updateOriginalLPValidationStatus"/>
+        </Widget>
+
+        <Widget name="propertyFormCurrentLP"
+                parent="simpleValidationTextBox"
+                p:name="currentLP"
+                p:label="Current Listing Price"
+                p:form="addProperty"
+                p:promptMessage="Current Listing Price."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateCurrentLP"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormDaysOnMarket"
+                parent="simpleValidationTextBox"
+                p:name="daysOnMarket"
+                p:label="Days On Market"
+                p:form="addProperty"
+                p:promptMessage="Enter Days On Market."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateDaysOnMarket"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormOfferCount"
+                parent="simpleValidationTextBox"
+                p:name="offerCount"
+                p:label="Offer Count"
+                p:form="addProperty"
+                p:promptMessage="Enter Offer Count."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateOfferCount"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormRecentOfferDate"
+                type="dijit/form/DateTextBox"
+                p:name="recentOfferDate"
+                p:constraints="{ datePattern : 'MM/dd/yyyy' }"
+                p:invalidMessage="Invalid date format. Use MM/dd/yyyy"
+                p:label="Recent Offer Date"
+                p:form="addProperty"
+                p:promptMessage="MM/dd/yyyy"
+                p:value="now">
+
+            <Listener event="onValidate"
+                      handler="validateRecentOfferDate"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormHighestOffer"
+                parent="simpleValidationTextBox"
+                p:name="highestOffer"
+                p:label="Highest Offer"
+                p:form="addProperty"
+                p:promptMessage="Enter Highest Offer."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateHighestOffer"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormLowestOffer"
+                parent="simpleValidationTextBox"
+                p:name="lowestOffer"
+                p:label="Lowest Offer"
+                p:form="addProperty"
+                p:promptMessage="Enter Lowest Offer."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateLowestOffer"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormCashOffers"
+                parent="simpleValidationTextBox"
+                p:name="cashOffers"
+                p:label="Cash Offers"
+                p:form="addProperty"
+                p:promptMessage="Enter Cash Offers."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateCashOffers"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormConventionalOffers"
+                parent="simpleValidationTextBox"
+                p:name="conventionalOffers"
+                p:label="Conventional Offers"
+                p:form="addProperty"
+                p:promptMessage="Enter Conventional Offers."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateConventionalOffers"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormFhaOffers"
+                parent="simpleValidationTextBox"
+                p:name="fhaOffers"
+                p:label="FHA Offers"
+                p:form="addProperty"
+                p:promptMessage="Enter FHA Offers."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateFhaOffers"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormVaOffers"
+                parent="simpleValidationTextBox"
+                p:name="vaOffers"
+                p:label="VA Offers"
+                p:form="addProperty"
+                p:promptMessage="Enter VA Offers."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateVaOffers"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormHighestCash"
+                parent="simpleValidationTextBox"
+                p:name="highestCash"
+                p:label="Highest Cash"
+                p:form="addProperty"
+                p:promptMessage="Enter Highest Cash."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateHighestCash"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormHighestConventional"
+                parent="simpleValidationTextBox"
+                p:name="highestConventional"
+                p:label="Highest Conventional"
+                p:form="addProperty"
+                p:promptMessage="Enter Highest Conventional."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateHighestConventional"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormHighestFha"
+                parent="simpleValidationTextBox"
+                p:name="highestFha"
+                p:label="Highest FHA"
+                p:form="addProperty"
+                p:promptMessage="Enter Highest FHA."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateHighestFha"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormHighestVa"
+                parent="simpleValidationTextBox"
+                p:name="highestVa"
+                p:label="Highest VA"
+                p:form="addProperty"
+                p:promptMessage="Enter Highest VA."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateHighestVa"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormHighestDownPay"
+                parent="simpleValidationTextBox"
+                p:name="highestDownPay"
+                p:label="Highest Down Pay"
+                p:form="addProperty"
+                p:promptMessage="Enter Highest Down Pay."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateHighestDownPay"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormShortestEscrow"
+                parent="simpleValidationTextBox"
+                p:name="shortestEscrow"
+                p:label="Shortest Escrow"
+                p:form="addProperty"
+                p:promptMessage="Enter Shortest Escrow."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateShortestEscrow"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormShortestInspection"
+                parent="simpleValidationTextBox"
+                p:name="shortestInspection"
+                p:label="Shortest Inspection"
+                p:form="addProperty"
+                p:promptMessage="Enter Shortest Inspection."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateShortestInspection"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormShortestLoan"
+                parent="simpleValidationTextBox"
+                p:name="shortestLoan"
+                p:label="Shortest Loan"
+                p:form="addProperty"
+                p:promptMessage="Enter Shortest Loan."
+                p:value="0">
+
+            <Listener event="onValidate"
+                      handler="validateShortestLoan"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormFromDate"
+                type="dijit/form/DateTextBox"
+                p:name="fromDate"
+                p:constraints="{ datePattern : 'MM/dd/yyyy' }"
+                p:invalidMessage="Invalid date format. Use MM/dd/yyyy"
+                p:label="From Date"
+                p:form="addProperty"
+                p:promptMessage="MM/dd/yyyy"
+                p:value="now">
+
+            <Listener event="onValidate"
+                      handler="validateFromDate"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormThruDate"
+                type="dijit/form/DateTextBox"
+                p:name="thruDate"
+                p:constraints="{ datePattern : 'MM/dd/yyyy' }"
+                p:invalidMessage="Invalid date format. Use MM/dd/yyyy"
+                p:label="Thru Date"
+                p:form="addProperty"
+                p:promptMessage="MM/dd/yyyy"
+                p:value="now">
+
+            <Listener event="onValidate"
+                      handler="validateThruDate"
+                      bean="propertyController"/>
+        </Widget>
+
+        <Widget name="propertyFormStatusId"
+                type="dijit/form/Select"
+                p:name="statusId">
+            <ConstructorArg>
+                <Bean p:style="width: 175px; margin-top:0px">
+                    <Property name="options">
+                        <BeanGroup>
+                            <Bean p:disabled="false"
+                                  p:label="Active"
+                                  p:value="Active"
+                                  p:selected="true"/>
+                            <Bean p:disabled="false"
+                                  p:label="Not active"
+                                  p:value="Not active"
+                                  p:selected="false"/>
+                        </BeanGroup>
+                    </Property>
+                </Bean>
+            </ConstructorArg>
+        </Widget>
+
+        <Widget id="addPropertyConfirmBtn"
+                type="dijit/form/Button"
+                p:label="Add property">
+
+            <Listener event="onClick"
+                      bean="propertyController"
+                      before="obtainErrorBox"
+                      handler="handleAddPropertyConfirmBtn"/>
+        </Widget>
+
+        <Widget id="showAdditionalDetailsBtn"
+                type="dijit/form/Button"
+                p:label="Add Additional details">
+
+            <Listener event="onClick"
+                      bean="propertyController"
+                      handler="handleShowAdditionalDetailsBtn"/>
+        </Widget>
+
+        <Widget name="offerAddBtn" type="dijit/form/Button">
+            <Property name="label" value="Add Offer"/>
+            <Listener event="onClick"
+                      bean="offerController"
+                      handler="handleAddButtonClick"/>
+        </Widget>
+
+        <Widget name="offerFormCreationDate"
+                type="dijit/form/DateTextBox"
+                p:name="creationDate"
+                p:constraints="{ datePattern : 'yyyy-MM-dd' }"
+                p:invalidMessage="Invalid date format. Use yyyy-MM-dd"
+                p:label="Creation Date"
+                p:form="addOffer"
+                p:promptMessage="yyyy-mm-dd"
+                p:value="2012-01-01"
+                p:displayedValue="2012-01-01"
+                p:class="offerFormCreationDate">
+
+            <Listener event="onValidate"
+                      handler="validateCreationDate"
+                      bean="offerController"
+                      after="updateCreationDateValidationStatus"/>
+        </Widget>
+
+        <Widget name="offerFormOfferFrom"
+                parent="simpleValidationTextBox"
+                p:name="offerFrom"
+                p:label="Offer From"
+                p:form="addOffer"
+                p:promptMessage="Enter Offer From.">
+
+            <Listener event="onValidate"
+                      handler="validateOfferFrom"
+                      bean="offerController"
+                      after="updateOfferFromValidationStatus"/>
+        </Widget>
+
+        <Widget name="offerFormPropertyDescription"
+                parent="simpleValidationTextBox"
+                p:name="propertyDescription"
+                p:label="Property Description"
+                p:form="addOffer"
+                p:promptMessage="Enter Property Description.">
+
+            <Listener event="onValidate"
+                      handler="validatePropertyDescription"
+                      bean="offerController"
+                      after="updatePropertyDescriptionValidationStatus"/>
+        </Widget>
+
+        <Widget name="offerFormParcelNum"
+                parent="simpleValidationTextBox"
+                p:name="parcelNum"
+                p:label="Parcel Number"
+                p:form="addOffer"
+                p:promptMessage="Enter Parcel Number.">
+
+            <Listener event="onValidate"
+                      handler="validateParcelNum"
+                      bean="offerController"
+                      after="updateParcelNumValidationStatus"/>
+        </Widget>
+
+        <Widget name="offerFormSituatedCity"
+                parent="simpleValidationTextBox"
+                p:name="situatedCity"
+                p:label="Situated City"
+                p:form="addOffer"
+                p:promptMessage="Enter Situated City.">
+
+            <Listener event="onValidate"
+                      handler="validateSituatedCity"
+                      bean="offerController"
+                      after="updateSituatedCityValidationStatus"/>
+        </Widget>
+
+        <Widget name="offerFormsituatedCounty"
+                parent="simpleValidationTextBox"
+                p:name="situatedCounty"
+                p:label="Situated County"
+                p:form="addOffer"
+                p:promptMessage="Enter Situated County.">
+
+            <Listener event="onValidate"
+                      handler="validateSituatedCounty"
+                      bean="offerController"
+                      after="updateSituatedCountyValidationStatus"/>
+        </Widget>
+
+        <Widget name="offerFormFromDate"
+                type="dijit/form/DateTextBox"
+                p:name="fromDate"
+                p:constraints="{ datePattern : 'yyyy-MM-dd' }"
+                p:invalidMessage="Invalid date format. Use yyyy-MM-dd"
+                p:label="From Date"
+                p:form="addOffer"
+                p:promptMessage="yyyy-mm-dd"
+                p:value="2012-01-01"
+                p:displayedValue="2012-01-01"
+                p:class="offerFormFromDate">
+
+            <Listener event="onValidate"
+                      handler="validateFromDate"
+                      bean="offerController"
+                      after="updateFromDateValidationStatus"/>
+        </Widget>
+
+        <Widget name="addOfferConfirmBtn"
+                type="dijit/form/Button"
+                p:label="Add offer">
+            <Listener event="onClick"
+                      bean="offerController"
+                      before="obtainErrorBox"
+                      handler="handleAddOfferConfirmBtn"/>
+        </Widget>
+    </Context>
+</beans>

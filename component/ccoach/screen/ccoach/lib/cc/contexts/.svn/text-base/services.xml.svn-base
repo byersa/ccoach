@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<beans xmlns="dojobiz/context/beans"
+       xmlns:p="decorator://dojobiz/context/decorators/property"
+       xmlns:idref="decorator://dojobiz/context/decorators/reference"
+       xmlns:mock="cc/extensions/mock">
+
+    <Context id="services">
+
+        <!-- SERVICES -->
+        <Bean id="contactService" type="dojo/store/JsonRest">
+            <ConstructorArg>
+                <Bean p:target="cc/rest/contact"/>
+            </ConstructorArg>
+        </Bean>
+
+        <Bean id="contactMocker" type="cc/services/dashboard/MockContactService"/>
+
+        <BeanGroup id="mockContactGroup">
+            <Bean p:method="get"/>
+            <Bean p:method="put"/>
+            <Bean p:method="remove"/>
+            <Bean p:method="query"/>
+        </BeanGroup>
+
+        <mock:JsonRestMock
+                idref:service="contactService"
+                idref:mocker="contactMocker"
+                idref:mocks="mockContactGroup"/>
+
+    </Context>
+</beans>

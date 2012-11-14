@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ats xmlns="dojobiz/ats"
+     xmlns:beans="dojobiz/context/beans"
+
+     xmlns:id="decorator://dojobiz/ats/decorators/FindByIdDecorator">
+
+    <beans:Context>
+        <TestSuite id="SignOut Test Suite">
+
+            <TestCase id="Navigate to Welcome page"
+                      type="functional"
+                      skip="false"
+                      page="/ccoach/control/main">
+                <Path>
+                    <DeferredSteps waitFor="welcomeView" state="downloadEnd">
+                        <StepTo id:node="signInNavLink" asWidget="false" duration="1000">
+                            <MouseClick left="true"/>
+                        </StepTo>
+                    </DeferredSteps>
+                    <DeferredSteps waitFor="signInView" state="downloadStart">
+                        <Step delay="500"/>
+                    </DeferredSteps>
+                </Path>
+            </TestCase>
+
+            <TestCase id="Navigate to SignIn page"
+                      type="functional"
+                      skip="false">
+                <Path>
+                    <DeferredSteps waitFor="signInView" state="downloadEnd">
+                        <StepTo id:node="signInLoginTextBox">
+                            <SetValue value="User"/>
+                        </StepTo>
+
+                        <StepTo id:node="signInPasswordTextBox">
+                            <Blur/>
+                            <SetValue value="pass"/>
+                        </StepTo>
+
+                        <StepTo id:node="performSignInBtn">
+                            <MouseClick left="true"/>
+                        </StepTo>
+                    </DeferredSteps>
+                </Path>
+            </TestCase>
+
+            <TestCase id="Navigate to Dashboard"
+                      type="functional"
+                      skip="false">
+                <Path>
+                    <DeferredSteps waitFor="propertiesView" state="downloadEnd">
+                        <StepTo id:node="myAccountNavLink" asWidget="false">
+                            <MouseClick left="true"/>
+                        </StepTo>
+                    </DeferredSteps>
+                </Path>
+            </TestCase>
+
+            <TestCase id="Navigate to MyAccount page"
+                      type="functional"
+                      skip="false">
+                <Path>
+                    <DeferredSteps waitFor="myAccountView" state="downloadEnd">
+                        <StepTo id:node="dashboardScreenContainer_tablist_myAccountView">
+                            <Step delay="500"/>
+                        </StepTo>
+                    </DeferredSteps>
+                </Path>
+            </TestCase>
+        </TestSuite>
+    </beans:Context>
+</ats>

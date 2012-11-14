@@ -1,0 +1,40 @@
+<div>
+    <div class="logo">
+    </div>
+    <div id="headerActiveUserStatus" style="visibility: hidden;">
+    </div>
+    <div class="userMenu">
+        <a id="signInNavLink"
+           data-dojo-attach-event="ondijitclick:_onSignIn"
+           role="presentation"
+           href="javascript://nop"><span></span>Sign In
+        </a>
+        <a id="signOutNavLink"
+           style="display:none;"
+           data-dojo-attach-event="ondijitclick:_onSignOut"
+           role="presentation"
+           href="javascript://nop"><span></span>Sign Out
+        </a>
+        -
+        <a id="registerNavLink"
+           data-dojo-attach-event="ondijitclick:_onRegister"
+           role="presentation"
+           href="javascript://nop">Register
+        </a>
+        <a id="myAccountNavLink"
+           style="display:none;"
+           data-dojo-attach-event="ondijitclick:_onMyAccount"
+           role="presentation"
+           href="javascript://nop">My Account
+        </a>
+        -
+        <a id="helpNavLink"
+           data-dojo-attach-event="ondijitclick:_onHelp"
+           role="presentation"
+           href="javascript://nop">Help
+        </a>
+    </div>
+    <div data-dojo-attach-point="containerNode">
+
+    </div>
+</div>

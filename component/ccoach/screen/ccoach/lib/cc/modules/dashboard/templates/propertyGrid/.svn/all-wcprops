@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/8297/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/propertyGrid
+END
+id_renderer.htm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/8297/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/propertyGrid/id_renderer.htm
+END
+percentValue_renderer.htm
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/7883/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/propertyGrid/percentValue_renderer.htm
+END
+offerId_renderer.htm
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/8297/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/propertyGrid/offerId_renderer.htm
+END
+priceValue_renderer.htm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/7883/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/propertyGrid/priceValue_renderer.htm
+END
+thumb_renderer.htm
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/7829/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/propertyGrid/thumb_renderer.htm
+END
+clientEmail_renderer.htm
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/8063/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/propertyGrid/clientEmail_renderer.htm
+END
+simpleValue_renderer.htm
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/8297/ccoach/webapp/ccoach/lib/cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm
+END

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ats xmlns="dojobiz/ats"
+     xmlns:beans="dojobiz/context/beans"
+
+     xmlns:id="decorator://dojobiz/ats/decorators/FindByIdDecorator">
+
+    <beans:Context>
+        <TestSuite id="Property Test Suite">
+            <TestCase id="Navigate to Welcome page"
+                      type="functional"
+                      skip="false"
+                      page="/ccoach/control/main">
+                <Path>
+                    <DeferredSteps waitFor="welcomeView" state="downloadEnd">
+                        <StepTo id:node="signInNavLink" asWidget="false" duration="1000">
+                            <MouseClick left="true"/>
+                        </StepTo>
+                    </DeferredSteps>
+                    <DeferredSteps waitFor="signInView" state="downloadStart">
+                        <Step delay="500"/>
+                    </DeferredSteps>
+                </Path>
+            </TestCase>
+
+            <TestCase id="Navigate to SignIn page"
+                      type="functional"
+                      skip="false">
+                <Path>
+                    <DeferredSteps waitFor="signInView" state="downloadEnd">
+                        <StepTo id:node="signInLoginTextBox">
+                            <SetValue value="User"/>
+                        </StepTo>
+
+                        <StepTo id:node="signInPasswordTextBox">
+                            <Blur/>
+                            <SetValue value="pass"/>
+                        </StepTo>
+
+                        <StepTo id:node="performSignInBtn">
+                            <MouseClick left="true"/>
+                        </StepTo>
+                    </DeferredSteps>
+                </Path>
+            </TestCase>
+
+            <TestCase id="Open Property"
+                      type="functional"
+                      skip="false">
+                <Path>
+                    <DeferredSteps waitFor="propertiesView" state="downloadEnd">
+                        <Step delay="500" />
+                        <StepTo id:node="index-0" asWidget="false">
+                            <MouseClick left="true"/>
+                            <MouseClick left="true"/>
+                        </StepTo>
+                    </DeferredSteps>
+                </Path>
+            </TestCase>
+
+            <TestCase id="Open Property details"
+                      type="functional"
+                      skip="false"
+                      implement="/ccoach/lib/cc/tests/dashboard/cases/PropertyTestCase">
+                <Path>
+                    <DeferredSteps waitFor="propertiesView" state="downloadEnd">
+                        <Step delay="1000"/>
+                    </DeferredSteps>
+                </Path>
+            </TestCase>
+        </TestSuite>
+    </beans:Context>
+</ats>

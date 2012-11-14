@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+    <title>Register</title>
+</head>
+<body>
+<div id="pageHolder">
+<div class="registerContainer">
+    <h1>Register page</h1>
+
+    <div class="innerContainer">
+        <div id="registerFormHolder">
+            <div id="registerMessBox"><!--.--></div>
+            <div id="registrationLoader"><!-- . --></div>
+            <div class="signIn register" id="registerFormContainer">
+                <div data-context-query="#registerTabContainer">
+                    <div id="registerTab1"
+                         data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: '1. Registration'">
+
+                        <form action="javascript://nop"
+                              data-context-wire="$userRegisterForm->wiringFormProto">
+                            <fieldset>
+                                <div class="formRow">
+                                    <div class="leftRowCol">
+                                        <div class="inputBackgroud">
+                                            <input id="nameTextBox"
+                                                   data-context-query="#registerNameTextBox"
+                                                   data-dojo-props="tabIndex: 1"/>
+                                        </div>
+                                    </div>
+                                    <div class="rightRowCol">
+                                        <div class="inputBackgroud">
+                                            <input id="lastNameTextBox"
+                                                   data-context-query="#registerLastNameTextBox"
+                                                   data-dojo-props="tabIndex: 2"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="leftRowCol">
+                                        <div class="inputBackgroud">
+                                            <input id="emailTextBox"
+                                                   data-context-query="#registerEmailTextBox"
+                                                   data-dojo-props="tabIndex: 3"/>
+                                        </div>
+                                    </div>
+                                    <div class="rightRowCol">
+                                        <div class="inputBackgroud">
+                                            <input id="loginTextBox"
+                                                   data-context-query="#registerAgencyName"
+                                                   data-dojo-props="tabIndex: 4" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="leftRowCol">
+                                        <div class="inputBackgroud">
+                                            <input id="passwordTextBox1"
+                                                   type="password"
+                                                   data-context-query="#registerPasswordTextBox1"
+                                                   data-dojo-props="type: 'password', tabIndex: 5"/>
+                                        </div>
+                                    </div>
+                                    <div class="rightRowCol">
+                                        <div class="inputBackgroud">
+                                            <input id="passwordTextBox2"
+                                                   type="password"
+                                                   data-context-query="#registerPasswordTextBox2"
+                                                   data-dojo-props="type: 'password', tabIndex: 6"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="leftRowCol">
+                                        <div class="inputBackgroud">
+                                            <input id="phone1"
+                                                   data-context-query="#registerPhone1"
+                                                   data-dojo-props="tabIndex: 7" />
+                                        </div>
+                                    </div>
+                                    <div class="rightRowCol">
+                                        <div class="inputBackgroud">
+                                            <input id="phone2"
+                                                   data-context-query="#registerPhone2"
+                                                   data-dojo-props="tabIndex: 8" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="leftRowCol">
+                                        <div class="inputBackgroud">
+                                            <input id="address1"
+                                                   data-context-query="#registerAddress1"
+                                                   data-dojo-props="tabIndex: 9" />
+                                        </div>
+                                    </div>
+                                    <div class="rightRowCol">
+                                        <div class="inputBackgroud">
+                                            <input id="address2"
+                                                   data-context-query="#registerAddress2"
+                                                   data-dojo-props="tabIndex: 10" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="leftRowCol">
+                                        <div class="inputBackgroud">
+                                            <input id="city"
+                                                   data-context-query="#registerCity"
+                                                   data-dojo-props="tabIndex: 11" />
+                                        </div>
+                                    </div>
+                                    <div class="rightRowCol">
+                                        <div class="inputBackgroud">
+                                            <input id="state"
+                                                   data-context-query="#registerState"
+                                                   data-dojo-props="tabIndex: 12" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="leftRowCol">
+                                        <div class="inputBackgroud">
+                                            <input id="zip"
+                                                   data-context-query="#registerZip"
+                                                   data-dojo-props="tabIndex: 13" />
+                                        </div>
+                                    </div>
+                                    <div class="rightRowCol">
+                                        <div class="inputBackgroud">
+                                            <input id="agentNumber"
+                                                   data-context-query="#registerAgentNumber"
+                                                   data-dojo-props="tabIndex: 14" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formRow">
+                                    <div class="stepStatus">Step 1 of 3</div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <div id="registerTab2"
+                         data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: '2. Subscription payment'">
+
+                        <div class="stepStatus">Step 2 of 3</div>
+                    </div>
+
+                    <div id="registerTab3"
+                         data-dojo-type="dijit.layout.ContentPane"
+                         data-dojo-props="title: '3. Confirmation / Summary'">
+
+                        <div class="formRow">
+                            <div class="signInBtn">
+                                <div data-context-query="#registerNext1Btn">Submit</div>
+                            </div>
+                            <div class="stepStatus">Step 3 of 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

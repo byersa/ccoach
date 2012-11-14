@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/8318/ccoach/webapp/ccoach/lib/cc/tests/main/cases
+END
+NavToRegisterPageTestCase.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/8318/ccoach/webapp/ccoach/lib/cc/tests/main/cases/NavToRegisterPageTestCase.js
+END
+NavToForgotPasswordTestCase.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/8318/ccoach/webapp/ccoach/lib/cc/tests/main/cases/NavToForgotPasswordTestCase.js
+END
+NavToSignInPageTestCase.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/8318/ccoach/webapp/ccoach/lib/cc/tests/main/cases/NavToSignInPageTestCase.js
+END
+NavToWelcomePageTestCase.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/8318/ccoach/webapp/ccoach/lib/cc/tests/main/cases/NavToWelcomePageTestCase.js
+END

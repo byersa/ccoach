@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ats xmlns="dojobiz/ats"
+     xmlns:beans="dojobiz/context/beans">
+
+    <beans:Context>
+        <TestSuite id="Welcome Test Suite">
+
+            <TestCase id="Navigate to Welcome page"
+                      type="functional"
+                      skip="false"
+                      page="/ccoach/control/main"
+                      implement="/ccoach/lib/cc/tests/main/cases/NavToWelcomePageTestCase">
+                <Path>
+                    <DeferredSteps waitFor="welcomeView" state="downloadEnd">
+                        <Step delay="100"/>
+                    </DeferredSteps>
+                </Path>
+            </TestCase>
+        </TestSuite>
+    </beans:Context>
+</ats>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<beans xmlns="dojobiz/context/beans"
+       xmlns:idref="decorator://dojobiz/context/decorators/reference"
+       xmlns:p="decorator://dojobiz/context/decorators/property">
+
+    <Import contextLocation="cc/contexts/commonContext.xml"/>
+
+    <Context id="registerContext" parent="commonContext">
+
+        <Widget id="registerTabContainer"
+                   type="dijit/layout/TabContainer"
+                   p:style="height: 460px;"/>
+
+        <!-- PRESENTER -->
+        <Bean id="registerPresenter"
+              type="cc/modules/main/presenters/RegisterPresenter"
+              idref:validator="validationUtils"
+              dependsOn="userInfo">
+
+        </Bean>
+
+        <!-- REGISTER PAGE INPUTS -->
+        <Widget id="registerNameTextBox" parent="simpleValidationTextBox"
+                p:name="name"
+                p:label="Name"
+                p:form="register"
+                p:promptMessage="Enter Name."
+                p:placeholder="First Name">
+            <Listener event="onValidate"
+                      bean="registerPresenter"
+                      handler="validateName"
+                      after="updateNameValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="registerPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="registerLastNameTextBox" parent="simpleValidationTextBox"
+                p:name="lastName"
+                p:label="Last Name"
+                p:form="register"
+                p:promptMessage="Enter Last Name."
+                p:placeholder="Last Name">
+            <Listener event="onValidate"
+                      bean="registerPresenter"
+                      handler="validateLastName"
+                      after="updateLastNameValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="registerPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="registerEmailTextBox" parent="simpleValidationTextBox"
+                p:name="email"
+                p:label="Email"
+                p:form="register"
+                p:promptMessage="Enter Email in format email@mail.com."
+                p:placeholder="Email (your login)">
+            <Listener event="onValidate"
+                      bean="registerPresenter"
+                      handler="validateEmail"
+                      after="updateEmailValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="registerPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="registerAgencyName" parent="simpleValidationTextBox"
+                p:name="agencyName"
+                p:label="Agency Name"
+                p:form="register"
+                p:promptMessage="Enter Agency Name."
+                p:placeholder="Agency Name">
+            <Listener event="onValidate"
+                      bean="registerPresenter"
+                      handler="validateAgencyName"
+                      after="updateAgencyNameValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="registerPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="registerPasswordTextBox1" parent="simpleValidationTextBox"
+                p:name="password1"
+                p:label="Password 1"
+                p:form="register"
+                p:promptMessage="Enter Password."
+                p:placeholder="Password">
+            <Listener event="onValidate"
+                      bean="registerPresenter"
+                      handler="validatePassword1"
+                      after="updatePassword1ValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="registerPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="registerPasswordTextBox2" parent="simpleValidationTextBox"
+                p:name="password2"
+                p:label="Password 2"
+                p:form="register"
+                p:promptMessage="Confirm Password."
+                p:placeholder="Confirm Password">
+            <Listener event="onValidate"
+                      bean="registerPresenter"
+                      handler="validatePassword2"
+                      after="updatePassword2ValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="registerPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="registerPhone1" parent="simpleValidationTextBox"
+                p:name="phone1"
+                p:label="Phone (work)"
+                p:form="register"
+                p:promptMessage="Enter Phone (work), in format 123-456-7890 or 1234567890."
+                p:placeholder="Phone (work)">
+            <Listener event="onValidate"
+                      bean="registerPresenter"
+                      handler="validatePhone1"
+                      after="updatePhone1ValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="registerPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="registerPhone2" parent="simpleValidationTextBox"
+                p:name="phone2"
+                p:label="Phone (mobile)"
+                p:form="register"
+                p:promptMessage="Enter Phone (mobile), in format 123-456-7890 or 1234567890.."
+                p:placeholder="Phone (mobile)">
+            <Listener event="onValidate"
+                      bean="registerPresenter"
+                      handler="validatePhone2"
+                      after="updatePhone2ValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="registerPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="registerAddress1" parent="simpleValidationTextBox"
+                p:name="address1"
+                p:label="Address 1"
+                p:form="register"
+                p:promptMessage="Enter Street Address 1."
+                p:placeholder="Street Address 1">
+            <Listener event="onValidate"
+                      bean="registerPresenter"
+                      handler="validateAddress1"
+                      after="updateAddress1ValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="registerPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="registerAddress2" parent="simpleValidationTextBox"
+                p:name="address2"
+                p:label="Address 2"
+                p:form="register"
+                p:promptMessage="Enter Street Address 2."
+                p:placeholder="Street Address 2">
+            <Listener event="onValidate"
+                      bean="registerPresenter"
+                      handler="validateAddress2"
+                      after="updateAddress2ValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="registerPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="registerCity" parent="simpleValidationTextBox"
+                p:name="city"
+                p:label="City"
+                p:form="register"
+                p:promptMessage="Enter City."
+                p:placeholder="City">
+            <Listener event="onValidate"
+                      bean="registerPresenter"
+                      handler="validateCity"
+                      after="updateCityValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="registerPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="registerState" parent="simpleValidationTextBox"
+                p:name="state"
+                p:label="State"
+                p:form="register"
+                p:promptMessage="Enter State."
+                p:placeholder="State">
+            <Listener event="onValidate"
+                      bean="registerPresenter"
+                      handler="validateState"
+                      after="updateStateValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="registerPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="registerZip" parent="simpleValidationTextBox"
+                p:name="zip"
+                p:label="Zip"
+                p:form="register"
+                p:promptMessage="Enter Zip."
+                p:placeholder="Zip">
+            <Listener event="onValidate"
+                      bean="registerPresenter"
+                      handler="validateZip"
+                      after="updateZipValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="registerPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="registerAgentNumber" parent="simpleValidationTextBox"
+                p:name="agentNumber"
+                p:label="Agent Number"
+                p:form="register"
+                p:promptMessage="Enter Agent Number."
+                p:placeholder="Agent Number">
+            <Listener event="onValidate"
+                      bean="registerPresenter"
+                      handler="validateAgentNumber"
+                      after="updateAgentNumberValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="registerPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="registerNext1Btn"
+                parent="linkButtonProto"
+                p:emitedEvent="register-next-step1">
+            <Listener mEvent="register-next-step1"
+                      before="obtainErrorBox"
+                      handler="handleBtnClick"
+                      bean="registerPresenter"/>
+        </Widget>
+    </Context>
+</beans>

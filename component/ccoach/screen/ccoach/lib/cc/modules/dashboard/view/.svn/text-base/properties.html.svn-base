@@ -1,0 +1,470 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Properties</title>
+</head>
+<body>
+<div id="dashboard"
+     data-dojo-type="dijit.layout.BorderContainer"
+     data-dojo-props="design: 'headline'">
+
+    <div id="propertiesTopSection"
+         data-dojo-type="dijit.layout.ContentPane"
+         data-dojo-props="region: 'top'"
+         style="height:40px;">
+
+        <div data-context-query="#propertyActivationDropDown"></div>
+        <div data-context-query="#propertyAddBtn"></div>
+    </div>
+
+
+    <div id="propertyGridContainer"
+         data-dojo-type="dijit.layout.ContentPane"
+         data-dojo-props="splitter:true, region:'center'">
+
+        <div data-context-query="#propertyGrid" style="height: 90.75%">
+        </div>
+    </div>
+
+    <div data-context-query="#addPropertyPopup">
+        <div id="addPropertyForm" data-context-query="#addPropertyForm">
+            <table>
+                <tr>
+                    <th colspan="1">
+                        <div style="font-size: 9px;"><span style="color:red;">*</span> - required</div>
+                    </th>
+                    <th colspan="7">
+                        <!-- . -->
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="8">
+                        <span class="formFieldsGroupTitle">Address information</span>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Street Address</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormStreet" data-context-query=".propertyFormStreet"/>
+                        <div class="propertyFormFieldTip">Example: 451 South State<span>*</span></div>
+                    </th>
+                    <th>
+                        <label>Zip</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormZip" data-context-query=".propertyFormZip"/>
+                        <div class="propertyFormFieldTip">Example: 91601<span>*</span></div>
+                    </th>
+                    <th>
+                        <label>Parcel Numer</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormParcelNum" data-context-query=".propertyFormParcelNum"/>
+                        <div class="propertyFormFieldTip">Example: 22-1234-56<span>*</span></div>
+                    </th>
+                    <th>
+                        <label>City</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormCity" data-context-query=".propertyFormCity"/>
+                        <div class="propertyFormFieldTip">Example: North Hollywood<span>*</span></div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Situated County</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormSituatedCounty" data-context-query=".propertyFormSituatedCounty"/>
+                        <div class="propertyFormFieldTip">Example: Los Angeles<span>*</span></div>
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="8">
+                        <hr color="#E8E1CF"/>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="8">
+                        <span class="formFieldsGroupTitle">Client information</span>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Client Id</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormClientId" data-context-query=".propertyFormClientId"/>
+                        <div class="propertyFormFieldTip">Example: Byers, John<span>*</span></div>
+                    </th>
+                    <th>
+                        <label>Client Names</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormClientNames" data-context-query=".propertyFormClientNames"/>
+                        <div class="propertyFormFieldTip">Example: Byers, John<span>*</span></div>
+                    </th>
+                    <th>
+                        <label>Client Address</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormClientAddress" data-context-query=".propertyFormClientAddress"/>
+                        <div class="propertyFormFieldTip">123 Ventura Blvd, North Hollywood, CA 91601</div>
+                    </th>
+                    <th>
+                        <label>Client Phone</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormClientPhone" data-context-query=".propertyFormClientPhone"/>
+                        <div class="propertyFormFieldTip">Example: 818-689-7134</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Client Email</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormClientEmail" data-context-query=".propertyFormClientEmail"/>
+                        <div class="propertyFormFieldTip">Example: johnbness7@gmail.com</div>
+                    </th>
+                    <th>
+                        <label>Client Notes</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormClientNotes" data-context-query=".propertyFormClientNotes"/>
+                        <div class="propertyFormFieldTip">Will have a price reduction after 15 days.<span>*</span></div>
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="8">
+                        <hr color="#E8E1CF"/>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="8">
+                        <span class="formFieldsGroupTitle">Other information</span>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>MLS Number</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormMlsNum" data-context-query=".propertyFormMlsNum"/>
+                        <div class="propertyFormFieldTip">Example: f123456<span>*</span></div>
+                    </th>
+                    <th>
+                        <label>Square Feet</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormPropSqFt" data-context-query=".propertyFormPropSqFt"/>
+                        <div class="propertyFormFieldTip">Example: 1725<span>*</span></div>
+                    </th>
+                    <th>
+                        <label>Year Built</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormPropYearBuilt" data-context-query=".propertyFormPropYearBuilt"/>
+                        <div class="propertyFormFieldTip">Example: 1977<span>*</span></div>
+                    </th>
+                    <th>
+                        <label>Style</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormPropStyle" data-context-query=".propertyFormPropStyle"/>
+                        <div class="propertyFormFieldTip">Example: Rancho<span>*</span></div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Termite Repair</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormTermiteRepair" data-context-query=".propertyFormTermiteRepair"/>
+                        <div class="propertyFormFieldTip">Example: 2200, 227.53</div>
+                    </th>
+                    <th>
+                        Retrofit
+                    </th>
+                    <th>
+                        <input id="propertyFormRetrofit" data-context-query=".propertyFormRetrofit"/>
+                        <div class="propertyFormFieldTip">Example: 500, 403.65</div>
+                    </th>
+                    <th>
+                        Other Repairs
+                    </th>
+                    <th>
+                        <input id="propertyFormOtherRepairs" data-context-query=".propertyFormOtherRepairs"/>
+                        <div class="propertyFormFieldTip">Example: 10000</div>
+                    </th>
+                    <th>
+                        Total Commission
+                    </th>
+                    <th>
+                        <input id="propertyFormTotalCommission" data-context-query=".propertyFormTotalCommission"/>
+                        <div class="propertyFormFieldTip">Example: 5<span>*</span></div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        List Percentage
+                    </th>
+                    <th>
+                        <input id="propertyFormListPercentage" data-context-query=".propertyFormListPercentage"/>
+                        <div class="propertyFormFieldTip">Example: 2<span>*</span></div>
+                    </th>
+                    <th>
+                        Sell Percentage
+                    </th>
+                    <th>
+                        <input id="propertyFormSellPercentage" data-context-query=".propertyFormSellPercentage"/>
+                        <div class="propertyFormFieldTip">Example: 2<span>*</span></div>
+                    </th>
+                    <th>
+                        <label>List Date</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormListDate"
+                               data-context-query=".propertyFormListDate"/>
+                    </th>
+                    <th>
+                        <label>Expiration Date</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormExpDate" data-context-query=".propertyFormExpDate"/>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Original Listing Price</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormOriginalLP" data-context-query=".propertyFormOriginalLP"/>
+                        <div class="propertyFormFieldTip">Example: 499000, 550000.84<span>*</span></div>
+                    </th>
+                    <th>
+                        <label>Current Listing Price</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormCurrentLP" data-context-query=".propertyFormCurrentLP"/>
+                        <div class="propertyFormFieldTip">Example: 499000, 550000.84</div>
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                    <th>
+                        <!-- . -->
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="8">
+                        <hr color="#E8E1CF"/>
+                    </th>
+                </tr>
+            </table>
+            <table id="showAdditionalDetailsBtnHolder">
+                <tr>
+                    <th>
+                        <input id="showAdditionalDetailsBtn" data-context-query="#showAdditionalDetailsBtn"/>
+                    </th>
+                </tr>
+            </table>
+            <table id="additionalDetails">
+                <tr>
+                    <th colspan="8">
+                        <span class="formFieldsGroupTitle">Additional details</span>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Days On Market</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormDaysOnMarket" data-context-query=".propertyFormDaysOnMarket"/>
+                        <div class="propertyFormFieldTip">Example: 6</div>
+                    </th>
+                    <th>
+                        <label>Offer Count</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormOfferCount" data-context-query=".propertyFormOfferCount"/>
+                    </th>
+                    <th>
+                        <label>Recent Offer Date</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormRecentOfferDate" data-context-query=".propertyFormRecentOfferDate"/>
+                    </th>
+                    <th>
+                        <label>Highest Offer</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormHighestOffer" data-context-query=".propertyFormHighestOffer"/>
+                        <div class="propertyFormFieldTip">Example: 499000, 550000.84</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Lowest Offer</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormLowestOffer" data-context-query=".propertyFormLowestOffer"/>
+                        <div class="propertyFormFieldTip">Example: 499000, 550000.84</div>
+                    </th>
+                    <th>
+                        <label>Cash Offers</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormCashOffers" data-context-query=".propertyFormCashOffers"/>
+                        <div class="propertyFormFieldTip">Example: 1</div>
+                    </th>
+                    <th>
+                        <label>Conventional Offers</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormConventionalOffers" data-context-query=".propertyFormConventionalOffers"/>
+                        <div class="propertyFormFieldTip">Example: 3</div>
+                    </th>
+                    <th>
+                        <label>FHA Offers</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormFhaOffers" data-context-query=".propertyFormFhaOffers"/>
+                        <div class="propertyFormFieldTip">Example: 2</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>VA Offers</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormVaOffers" data-context-query=".propertyFormVaOffers"/>
+                        <div class="propertyFormFieldTip">Example: 1</div>
+                    </th>
+                    <th>
+                        <label>Highest Cash</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormHighestCash" data-context-query=".propertyFormHighestCash"/>
+                        <div class="propertyFormFieldTip">Example: 499000, 550000.84</div>
+                    </th>
+                    <th>
+                        <label>Highest Conventional</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormHighestConventional" data-context-query=".propertyFormHighestConventional"/>
+                        <div class="propertyFormFieldTip">Example: 499000, 550000.84</div>
+                    </th>
+                    <th>
+                        <label>Highest FHA</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormHighestFha" data-context-query=".propertyFormHighestFha"/>
+                        <div class="propertyFormFieldTip">Example: 499000, 550000.84</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Highest VA</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormHighestVa" data-context-query=".propertyFormHighestVa"/>
+                        <div class="propertyFormFieldTip">Example: 499000, 550000.84</div>
+                    </th>
+                    <th>
+                        <label>Highest Down Pay</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormHighestDownPay" data-context-query=".propertyFormHighestDownPay"/>
+                        <div class="propertyFormFieldTip">Example: 499000, 550000.84</div>
+                    </th>
+                    <th>
+                        <label>Shortest Escrow</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormShortestEscrow" data-context-query=".propertyFormShortestEscrow"/>
+                        <div class="propertyFormFieldTip">Example: 10</div>
+                    </th>
+                    <th>
+                        <label>Shortest Inspection</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormShortestInspection" data-context-query=".propertyFormShortestInspection"/>
+                        <div class="propertyFormFieldTip">Example: 5</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Shortest Loan</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormShortestLoan" data-context-query=".propertyFormShortestLoan"/>
+                        <div class="propertyFormFieldTip">Example: 17</div>
+                    </th>
+                    <th>
+                        <label>From Date</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormFromDate" data-context-query=".propertyFormFromDate"/>
+                    </th>
+                    <th>
+                        <label>Thru Date</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormThruDate" data-context-query=".propertyFormThruDate"/>
+                    </th>
+                    <th>
+                        <label>Status Id</label>
+                    </th>
+                    <th>
+                        <input id="propertyFormStatusId" data-context-query=".propertyFormStatusId"/>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div class="formRuttonRow">
+            <input data-context-query="#addPropertyConfirmBtn"/>
+        </div>
+        <div id="addPropertyMessBox"><!--.--></div>
+    </div>
+</body>
+</html>

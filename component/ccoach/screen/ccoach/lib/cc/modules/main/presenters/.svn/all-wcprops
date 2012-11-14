@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/8393/ccoach/webapp/ccoach/lib/cc/modules/main/presenters
+END
+RegisterPresenter.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/8393/ccoach/webapp/ccoach/lib/cc/modules/main/presenters/RegisterPresenter.js
+END
+ForgotPassPresenter.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/8393/ccoach/webapp/ccoach/lib/cc/modules/main/presenters/ForgotPassPresenter.js
+END
+SignInPresenter.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/8393/ccoach/webapp/ccoach/lib/cc/modules/main/presenters/SignInPresenter.js
+END
+BasePresenter.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/8363/ccoach/webapp/ccoach/lib/cc/modules/main/presenters/BasePresenter.js
+END
+WelcomePresenter.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/8318/ccoach/webapp/ccoach/lib/cc/modules/main/presenters/WelcomePresenter.js
+END

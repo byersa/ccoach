@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Contacts</title>
+</head>
+<body>
+<div id="contactsTabContainer"
+     data-dojo-type="dijit.layout.TabContainer">
+
+    <div data-dojo-type="dijit.layout.ContentPane"
+         data-dojo-props="title: 'My contacts list'">
+
+        <div data-dojo-type="dijit.layout.BorderContainer"
+             data-dojo-props="design: 'headline'">
+
+            <div id="contactsTopSearch"
+                 data-dojo-type="dijit.layout.ContentPane"
+                 data-dojo-props="region: 'top'">
+                <label>Field</label>
+
+                <div style="float: left;">
+                    <div data-context-query="#contactSearchFieldsDropDown"></div>
+                </div>
+
+                <label>Search text</label>
+
+                <div style="float: left;">
+                    <div data-context-query="#contactSearchText"></div>
+                </div>
+
+                <div style="float: left; margin-left: 10px; margin-top: -2px;">
+                    <div data-context-query="#contactSearchButton"></div>
+                </div>
+
+                <div style="float: left; margin-left: 10px; margin-top: -2px;">
+                    <div data-context-query="#contactAddButton"></div>
+                </div>
+            </div>
+
+            <div data-dojo-type="dijit.layout.ContentPane"
+                 data-dojo-props="region: 'center'">
+                <!--<div data-context-query="#contactGrid" style="height: 90.75%"></div>-->
+            </div>
+
+        </div>
+    </div>
+</div>
+<div data-context-query="#addContactPopup">
+    <div data-context-query="#addContactForm">
+
+        <input data-context-query=".contactFormNameBox"/>
+        <input data-context-query=".contactFormLastNameBox"/>
+    </div>
+</div>
+</body>
+</html>

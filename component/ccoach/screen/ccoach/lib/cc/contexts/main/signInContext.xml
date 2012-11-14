@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<beans xmlns="dojobiz/context/beans"
+       xmlns:idref="decorator://dojobiz/context/decorators/reference"
+       xmlns:p="decorator://dojobiz/context/decorators/property">
+
+    <Import contextLocation="cc/contexts/commonContext.xml"/>
+
+    <Context id="signInContext" parent="commonContext">
+
+        <!-- PRESENTER -->
+        <Bean id="signInPresenter"
+              type="cc/modules/main/presenters/SignInPresenter"
+              idref:validator="validationUtils"
+              idref:userInfo="userInfo"/>
+
+        <!-- SIGN IN PAGE INPUTS -->
+        <Widget id="signInLoginTextBox" parent="simpleValidationTextBox"
+                p:name="login"
+                p:label="Login"
+                p:form="signIn"
+                p:promptMessage="Enter Login."
+                p:placeholder="Username">
+            <Listener event="onValidate"
+                      bean="signInPresenter"
+                      handler="validateLogin"
+                      after="updateLoginValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="signInPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="signInPasswordTextBox" parent="simpleValidationTextBox"
+                p:name="password"
+                p:label="Password"
+                p:form="signIn"
+                p:promptMessage="Enter Password."
+                p:placeholder="Password">
+            <Listener event="onValidate"
+                      bean="signInPresenter"
+                      handler="validatePassword"
+                      after="updatePasswordValidationStatus"/>
+            <Listener event="onKeyUp"
+                      bean="signInPresenter"
+                      handler="enterEventHandler"/>
+        </Widget>
+
+        <Widget id="forgotPasswordButton"
+                parent="linkButtonProto"
+                p:emitedEvent="forgot-password"
+                p:label="Forgot your password?">
+            <Listener mEvent="forgot-password"
+                      handler="handleForgotPassword"
+                      bean="welcomePresenter"/>
+        </Widget>
+
+        <Widget id="performSignInBtn"
+                parent="linkButtonProto"
+                p:emitedEvent="perform-sign-in">
+            <Listener mEvent="perform-sign-in"
+                      before="obtainErrorBox"
+                      handler="handleBtnClick"
+                      bean="signInPresenter"/>
+        </Widget>
+    </Context>
+</beans>

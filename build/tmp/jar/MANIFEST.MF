@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Implementation-Title: Moqui Runtime
+Implementation-Version: 1.0.0
+

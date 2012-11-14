@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+    <title>Welcome on Contract Coach</title>
+</head>
+<body>
+    <div class="textContainer">
+        <h1>Welcome</h1>
+        <p>
+            The <b>Contract Coach (CC)</b> app project has two purposes. One is to <i style="color:blue;">create
+            an online application</i> that will allow real estate agents to create offer contracts and to manage the
+            receipt and comparison of contracts. The other purpose is to <i style="color:blue;">demonstrate the
+            viability of the Dojobiz framework</i> in developing real world applications. The goal is to develop the
+            first module, the <i style="color:red;">Contact module</i>, <i style="color:red;">within two
+            months</i> and demonstrate it to those responsible for making the decision to open source it or not.
+        </p>
+        <p>
+            The CC app has the following modules:
+        </p>
+        <p>
+            <ul>
+                <li>
+                    <b>Dashboard</b> - shows all of a <i style="color:green;">user’s activities</i>
+                </li>
+                <li>
+                    <b>Contact</b> - Maintain the buyer <i style="color:green;">list of clients</i> and the offerer
+                    <i style="color:green;">list of agents</i>
+                </li>
+                <li>
+                    <b>Contract Coach</b> - Aid the agent in the process of <i style="color:green;">generating offer
+                    contracts</i>. This is a mix of validation and recommendations. It will also involve allowing the
+                    agent to add their own rules.
+                </li>
+                <li>
+                    <b>Offer Manager</b> - This module allows the listing agent to <i style="color:green;">receive
+                    offers</i>, <i style="color:green;">parse</i> them and <i style="color:green;">store</i> them and
+                    <i style="color:green;">compare</i> them to other offers for the same properties. It allows
+                    <i style="color:green;">notes to be stored</i> for the submitting agents. Various
+                    <i style="color:green;">online formatting</i> approaches will be taken allow the agent to analyze
+                    the offers. An important subcomponent of the Offer Manager is <i style="color:green;">email
+                    receiving</i> agent which will automatically detach the offer from incoming emails,
+                    <i style="color:green;">parse</i> it if it is in “native” format or employ an OCR tool to convert
+                    and then parse the offer into the native database format.
+                </li>
+            </ul>
+        </p>
+        <p style="text-align: center; padding: 10px 0 10px 0;">
+            <img style="border:3px solid #363837; width:100%;" src="/ccoach/themes/images/delete/ContactCoachDiagram.png" alt="Welcome Page Mockup" title="Welcome Page Mockup" />
+            <br />
+            <small>Contract Coach Diagram (16.08.2012)</small>
+        </p>
+        <p style="text-align: center; padding: 10px 0 10px 0;">
+            <img style="border:3px solid #363837; width:100%;" src="/ccoach/themes/images/delete/Dashboard.png" alt="Welcome Page Mockup" title="Welcome Page Mockup" />
+            <br />
+            <small>Dashboard Diagram (19.09.2012)</small>
+        </p>
+        <h2 style="text-align: center">Flow</h2>
+        <p>
+            The user will always go to the same screen, regardless if they have logged in or not. The top right corner
+            will remain consistent with <i style="color:green;">"Sign In"</i>, <i style="color:green;">"Register"</i>
+            and <i style="color:green;">“Help”</i> links. The center content will be welcome page for new clients who
+            have not signed up. Its content will be developed separately. If the user is an existing client, then the
+            center screen will be a dashboard that shows all the activity associated with that user.
+        </p>
+        <p>
+            The logged in center content section will be a tabbed container with two persistent tabs - Dashboard and
+            Contacts. As other contacts or properties are “opened” they will appear as tabs alongside Dashboard and
+            Contacts.
+        </p>
+        <p style="text-align: center; padding: 10px 0 10px 0;">
+            <img style="border:3px solid #363837;" src="/ccoach/themes/images/delete/welcomePageMockup.png" alt="Welcome Page Mockup" title="Welcome Page Mockup" />
+            <br />
+            <small>Welcome Page Mockup</small>
+        </p>
+        <p style="text-align: center; padding: 10px 0 10px 0;">
+            <img style="border:3px solid #363837;" src="/ccoach/themes/images/delete/dashboardMockup.png" alt="Dashboard Mockup" title="Dashboard Mockup" />
+            <br />
+            <small>Dashboard Mockup</small>
+        </p>
+        <h2 style="text-align: center">Functional Specs</h2>
+        <h3>Dashboard</h3>
+        <p>
+            Users have two main interests - <i style="color:green;">buying agents</i> (agents whose clients are looking
+            to buy a house) are interested in writing contracts (ie. offers) and <i style="color:green;">selling
+            agents</i> (agents whose clients are selling their house) are interested in managing the offers that come
+            in. In the current market, sellers are pricing their houses below market value in order to generate a lot
+            of offers. These offers are difficult for an agent to manage.
+        </p>
+        <p>
+            The <i style="color:green;">dashboard</i> shall be <i style="color:green;">split in half</i> with a
+            <i style="color:green;">grid on both sides</i>. The left side, or buying side, grid will show all
+            properties for which the agent is writing offers. The right side, or selling side, grid will show all the
+            properties for which the agent is receiving offers. Each grid will have
+            <i style="color:green;">checkboxes</i> on the left side to select for common actions. The common actions
+            would be “deactivate”, “notify”, ??? The other fields in the grid will be: property (displayed as the
+            address - wide field), client (displayed by name), status (active, waiting on response, inactive), date
+            entered, ???
+        </p>
+        <p>
+            There will be a <i style="color:green;">primary action for each row</i>. The
+            <i style="color:green;">“property”</i> field and an <i style="color:green;">action field</i> will link to
+            this action. For buying properties, it will link to the <i style="color:green;">Contract Writer</i> page,
+            which will replace the Dashboard. For selling properties, it will link to the
+            <i style="color:green;">Contract Manager</i> page, which will also replace the Dashboard. The
+            <i style="color:green;">client field</i> in both grids will link to the <i style="color:green;">Contacts
+            page</i>. There will be links on the Dashboard page to <i style="color:green;">create</i> new contacts,
+            properties and offers. Then a buying agents has a client who wants to write an offer on a property, the
+            agent will go to the Contract Writer page and the selling agent will go to the Offer Manager page.
+        </p>
+        <p>
+            The Dashboard will be laid out in a border container fashion with common <i style="color:green;">areas on
+            the top</i> and bottom - with the <i style="color:green;">two grid sections</i> on either side. Plugins
+            that will go in the common areas will be a <i style="color:green;">system notification area</i> and an
+            <i style="color:green;">alert area</i>. A calendar will be another possible component.
+        </p>
+        <h3>Contract Writer</h3>
+        <p>
+            The Contract Writer will be a knowledge app in which the user is assisted in filling out an offer contract
+            by a javascript based rules engine. As the user moves from field to field, he or she will be prompted with
+            advice on completing that field. There will be two display objects for presenting advice. One will be a
+            tooltip that shows near the field to be completed. The other object will be a larger panel that displays
+            off of the page. The larger panel will display all of the advice pertaining to the document. It will be
+            organized in terms of severity. Where applicable, each piece of advice will have an associated corrective
+            action. The user can choose to have the action executed or he can choose to let the advice panel take him
+            to the field in question.
+        </p>
+        <p>
+            The Contract Writer will have links to manage the persons and property associated with this offer.
+        </p>
+        <p>
+            Contract Writer will have an “author” mode in which “rules” are added to the system by the user/author and
+            tested.
+        </p>
+        <h3>Offer Manager</h3>
+        <p>
+            The Offer Manager will be a tabbed container, with the left most tab not hideable. It’s tab title will be, 
+            “Offers”. It will essentially have the same grid as on the right side of the Dashboard. It will default 
+            into showing the “active” properties. The user will be able to use a search popup to see other listings. 
+            Clicking on a property in the offers list will open/go to a “Property” tab showing all the offers on a 
+            particular property in grid fashion. The fields will be offering agent (and their client’s names), offer 
+            price, and other fields that will come from parsing the contract. In addition to the offers grid, there 
+            will be a section in which the offers will be displayed in graphical fashion.
+        </p>
+        <p>
+            The individual property tabs will actually be stack containers that shows a listing grid as its default 
+            page, but whenever a line in the offer list is clicked, the contract offer that was submitted from that 
+            bidder is displayed. The display will be a form shows all the information about that offer. The original 
+            document will be available as a popup.
+        </p>
+        <h3>Contacts</h3>
+        <p>
+            The Contact manager will follow the pattern of being a tabbed container with a list/search grid and
+            separate tabs for individual contact details.
+        </p>
+        <p>
+            The contact details page will have the following sections, each with an “Edit” (and “History”???) link next
+            to it. The sections will be “name and demographics (just gender???)”, street address, phone numbers,
+            emails, skype account and “offer activity” - whether it be buying or selling. Whenever the “Edit” link is
+            clicked a popup edit window will be displayed that also show the history for that piece of information.
+            The user will be able to click on one of the past records to fill in the current record’s fields.
+        </p>
+        <h3>Common tools</h3>
+        <p>
+            There will be a number of tools from which it will be desirable to build the functionality described above. 
+            These will be:
+            <ul>
+                <li>
+                    <b>Logged in status-based options</b> - This refers to the links in the top right corner that 
+                    display the “Sign In” or “Sign Out” and link to account information. Also, the other actions that 
+                    are available then signed in must follow a common pattern.
+                </li>
+                <li>
+                    <b>Checkbox selectable action grids</b> -
+                </li>
+                <li>
+                    <b>Popup search for grids</b> -
+                </li>
+                <li>
+                    <b>The whole Contacts module</b> - It must allow for some custom submodules to be plugged in.
+                </li>
+                <li>
+                    <b>Help system</b> - must be maintainable by non-programmer
+                </li>
+            </ul>
+        </p>
+    </div>
+</body>
+</html>

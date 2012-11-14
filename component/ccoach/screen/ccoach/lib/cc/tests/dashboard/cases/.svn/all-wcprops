@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/dashboard/cases
+END
+AddOfferTestCase.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/8339/ccoach/webapp/ccoach/lib/cc/tests/dashboard/cases/AddOfferTestCase.js
+END
+AddPropertyTestCase.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/dashboard/cases/AddPropertyTestCase.js
+END
+DeactivatePropertyTestCase.js
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/dashboard/cases/DeactivatePropertyTestCase.js
+END
+OfferTestCase.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/dashboard/cases/OfferTestCase.js
+END
+PropertyTestCase.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/8352/ccoach/webapp/ccoach/lib/cc/tests/dashboard/cases/PropertyTestCase.js
+END
+ActivatePropertyTestCase.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/8318/ccoach/webapp/ccoach/lib/cc/tests/dashboard/cases/ActivatePropertyTestCase.js
+END

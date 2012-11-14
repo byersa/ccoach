@@ -1,0 +1,7 @@
+<div id="skypeCell_${id}">
+    <span>
+        ${value}
+        <a class="skypeCallLink" alt="Make a call" title="Make a call" href="skype:${value}?call">
+        </a>
+    </span>
+</div>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<flow xmlns="dojobiz/context/flow"
+      xmlns:beans="dojobiz/context/beans">
+
+    <Import contextLocation="cc/contexts/main/welcomeContext.xml"/>
+
+    <beans:Context id="welcomeFlow" parent="welcomeContext">
+
+        <Flow containerId="welcomeScreenContainer">
+            <State id="initState" autoStart="true">
+                <Transition to="welcomeState"/>
+            </State>
+
+            <State id="welcomeState">
+                <View id="welcomeView" href="/ccoach/lib/cc/modules/main/view/welcome.html"/>
+            </State>
+
+            <State id="signInState">
+                <View id="signInView"
+                      href="/ccoach/lib/cc/modules/main/view/signIn.html"
+                      viewType="cc/modules/main/signInModule"/>
+            </State>
+
+            <State id="signOutState">
+                <View id="signOutView"
+                      href="/ccoach/lib/cc/modules/main/view/signOut.html"/>
+            </State>
+
+            <State id="registerState">
+                <View id="registerView"
+                      href="/ccoach/lib/cc/modules/main/view/register.html"
+                      viewType="cc/modules/main/registerModule"/>
+            </State>
+
+            <State id="helpState">
+                <View id="helpView" href="/ccoach/lib/cc/modules/main/view/help.html"/>
+            </State>
+
+            <State id="forgotPassState">
+                <View id="forgotPassView"
+                      href="/ccoach/lib/cc/modules/main/view/forgotPass.html"
+                      viewType="cc/modules/main/forgotPasswordModule"/>
+            </State>
+
+            <State id="dashboardScreenState">
+                <View id="dashboardScreen"
+                      href="/ccoach/lib/cc/modules/dashboard/view/dashboardScreen.html"
+                      viewType="cc/modules/dashboard/dashboardScreenModule"/>
+            </State>
+        </Flow>
+    </beans:Context>
+</flow>

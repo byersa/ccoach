@@ -1,0 +1,172 @@
+/*
+ * This Work is in the public domain and is provided on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied,
+ * including, without limitation, any warranties or conditions of TITLE,
+ * NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE.
+ * You are solely responsible for determining the appropriateness of using
+ * this Work and assume any risks associated with your use of this Work.
+ *
+ * This Work includes contributions authored by David E. Jones, not as a
+ * "work for hire", who hereby disclaims any copyright to the same.
+ */
+
+/* defaults */
+* {
+margin: 0px; border: 0px; outline: 0px; padding: 0px;
+color: black; background: transparent; text-decoration: none;
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; font-weight: normal;
+font-size: 16px; /* set base font size here, all others relative using em */
+vertical-align: middle;
+}
+
+/* ========================== body, etc ========================== */
+
+body { background: #DDDDDF; margin: 0px; }
+
+#apps-container {
+background: white;
+margin: 0px auto 0px auto; border: 10px solid #DDDDDF; padding: 10px;
+-moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px;
+width: 980px; overflow: auto;
+}
+
+#header-logo { float: left; width: 300px; height: 30px; }
+#header-logo h1, #header-logo a { font-size: 1.5em; font-family: Courier, "Courier New", monospace; font-weight: bold; border: 0px; padding: 0px; margin: 0px; }
+#header-user { float: right; }
+
+div.message { width: 600px; margin: 2px auto 2px auto; border: 1px solid #DDDDDF; padding: 2px; text-align: center; }
+div.message span { font-size: .9em; }
+div.error span { color: red; }
+
+#apps-container-footer { margin: 0px auto 0px auto; border-top: 1px solid #DDDDDF; padding: 2px; width: 200px; text-align: center; }
+
+/* ====================== headings, general ====================== */
+
+h1 { font-size: 1.5em; font-weight: bold; }
+h2 { font-size: 1.2em; font-weight: bold; }
+h3 { font-size: 1.0em; font-weight: bold; }
+h4 { font-size: .9em; font-weight: bold; }
+h5 { font-size: .8em; font-weight: bold; }
+h6 { font-size: .6em; }
+
+tt, pre, pre code { font-family: "Courier New", Courier, monospace; }
+
+a, a span { font-size: .9em; font-weight: bold; }
+p { margin: 2px 0px 2px 0px; padding: 2px 0px 2px 0px; }
+li { margin: 0px 0px 0px 16px; padding: 0px 0px 0px 8px; }
+form { display: inline; }
+
+button, input[type="reset"], input[type="submit"], input[type="button"], a.button {
+-webkit-appearance: none; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+margin: 2px 2px 2px 2px; border: 1px solid; border-color: #ddd #bbb #999; outline: 0px; padding: 2px 4px 2px 4px;
+display: inline-block; overflow: visible; width: auto; cursor: pointer;
+background: white; color: #333;
+font-size: .8em; font-weight: bold; text-decoration: none; text-shadow: #fff 0 1px 1px;
+}
+
+button:active, input[type="reset"]:active, input[type="submit"]:active, input[type="button"]:active, a.button:active {
+border-color: #999 #bbb #ddd; color: #666;
+}
+
+input[type="text"], input[type="email"], input[type="url"], input[type="number"], input[type="password"], textarea, select {
+-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: 1px solid; border-color: #999 #bbb #ddd;
+margin: 2px 2px 2px 2px; padding: 2px 4px 2px 4px;
+font-size: .8em; font-family: Lucida Console, Monaco, monospace;
+}
+
+input:required:invalid, input:invalid, textarea:invalid { background-color: #FDD; }
+input:focus:valid, textarea:focus:valid { background-color: #EEE; }
+
+th { text-align: left; padding: 0px 4px 0px 2px; }
+td { padding: 0px 4px 0px 2px; }
+tr:nth-child(odd) { background-color: #EEE; }
+/*tr:nth-child(even) { background-color: #FFF; }*/
+tr:hover { background-color: #DDD; }
+
+/* ======================= XML Form Styles ======================= */
+
+.form-list-paginate a, .form-list-paginate span { padding-right: 4px;
+    font-family: "Courier New", monospace; font-weight: bold; font-size: .8em; vertical-align: top; }
+
+fieldset.form-single-outer {
+margin: 4px;
+-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: 1px solid #DDDDDF;
+padding: 4px; width: 95%;
+}
+
+.single-form-field { padding-right: 10px; }
+.single-form-field span { font-size: .8em; }
+.single-form-field span input { margin-right: 4px; }
+label.form-title { vertical-align: middle; display: inline-block; width: 120px; }
+
+.field-row { }
+.field-row-item { float: left; display: inline-block; }
+
+.form-list-outer {
+margin: 4px;
+border: 1px solid #DDDDDF; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+padding: 4px; width: 100%;
+display: table; table-layout: auto; border-collapse: separate; empty-cells: show;
+}
+.form-header-group { display: table-header-group; }
+.form-header-row { display: table-row; }
+.form-header-cell { display: table-cell; text-align: left; padding: 0px 4px 0px 2px; }
+.form-body { display: table-row-group; }
+.form-row { display: table-row; background-color: #FFF; }
+.form-cell { display: table-cell; padding: 0px 4px 0px 2px; font-size: .8em; }
+.form-row:nth-child(odd) { background-color: #EEE; }
+/* .form-row:nth-child(even) { background-color: #FFF; } */
+.form-row:hover { background-color: #DDD; }
+
+.form-title { padding: 0px 8px 0px 2px; font-size: .9em; font-weight: bold; }
+.form-list-outer .form-title { border-bottom: 1px solid #DDDDDF; white-space: nowrap; }
+
+.form-header-field { white-space: nowrap; }
+.form-header-cell, .form-header-cell div.form-title { vertical-align: top; }
+
+.form-date-find span, .form-range-find span, .form-text-find span, .form-text-find select { font-size: .8em; }
+
+/* This is the +/- in the header, use fixed width font for consistent sizing, Courier New has the best vertical alignment with + and - */
+a.form-order-by { margin: 0px; padding: 0px; font-family: "Courier New", monospace; font-weight: bold; font-size: 1.2em; vertical-align: top; }
+a.form-order-by:hover { color: blue; }
+a.active { color: red; }
+
+/* ======================= Screen-specific ======================= */
+
+#login-box { width: 280px; margin: 0px auto 0px auto; padding: 10px; }
+
+#ArtifactHitBins-table tbody tr td, #ArtifactHitBins-table thead tr th, #ArtifactHitBins-table thead tr th div select,
+#ArtifactHitBins-table thead tr th div input { font-size: .7em; }
+
+#VisitArtifactHitList-table tbody tr td div { font-size: .9em; }
+
+/* ================ Overrides for jquery-ui theme ================ */
+
+.ui-widget { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; font-size: .8em; }
+
+.ui-button-icon-only { width: 1.1em; }
+button.ui-button-icon-only { width: 1.1em; }
+.ui-button-icons-only { width: 1.5em; }
+button.ui-button-icons-only { width: 1.5em; }
+.ui-button .ui-button-text { display: block; line-height: .4;  }
+
+.ui-tabs { position: relative; padding: 0em; zoom: 1; border: 0px; }
+.ui-tabs .ui-tabs-nav { margin: 0; padding: .1em .2em 0; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .1em .5em; text-decoration: none; }
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 4px 0px; background: none; }
+
+/* ================ Extensions for jquery-ui theme =============== */
+
+.ui-autocomplete-input { border: 1px solid #aaaaaa; font-size: .8em; width: 300px; }
+.ui-autocomplete-loading { background: white url('/images/wait_anim_16x16.gif') right center no-repeat; }
+.ui-loading { background: white url('/images/wait_anim_16x16.gif') right center no-repeat; }
+
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }

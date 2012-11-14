@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<flow xmlns="dojobiz/context/flow"
+      xmlns:beans="dojobiz/context/beans">
+
+    <Import contextLocation="cc/contexts/dashboard/dashboardContext.xml"/>
+
+    <beans:Context id="dashboardFlow" parent="dashboardContext">
+        <Flow containerId="dashboardScreenContainer">
+            <State id="initState" autoStart="true">
+                <Transition to="propertiesState"/>
+            </State>
+
+            <State id="propertiesState">
+                <View id="propertiesView"
+                      title="Properties"
+                      href="/ccoach/lib/cc/modules/dashboard/view/properties.html"/>
+            </State>
+
+            <State id="contactsState">
+                <View id="contactsView"
+                      href="/ccoach/lib/cc/modules/dashboard/view/contacts.html"
+                      title="Contacts"
+                      viewType="cc/modules/dashboard/contactsModule"/>
+            </State>
+
+            <State id="myAccountState">
+                <View id="myAccountView"
+                      href="/ccoach/lib/cc/modules/dashboard/view/myAccount.html"
+                      title="My Account"
+                      viewType="cc/modules/dashboard/myAccountModule"/>
+            </State>
+
+            <StateGroup states="propertiesState, contactsState"/>
+        </Flow>
+    </beans:Context>
+</flow>

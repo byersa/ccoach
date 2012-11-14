@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/8388/ccoach/webapp/ccoach/lib/cc/contexts/main
+END
+registerContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/8363/ccoach/webapp/ccoach/lib/cc/contexts/main/registerContext.xml
+END
+signInContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/8388/ccoach/webapp/ccoach/lib/cc/contexts/main/signInContext.xml
+END
+welcomeContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/8318/ccoach/webapp/ccoach/lib/cc/contexts/main/welcomeContext.xml
+END
+forgotPasswordContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/8313/ccoach/webapp/ccoach/lib/cc/contexts/main/forgotPasswordContext.xml
+END

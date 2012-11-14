@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<beans xmlns="dojobiz/context/beans"
+       xmlns:p="decorator://dojobiz/context/decorators/property"
+       xmlns:idref="decorator://dojobiz/context/decorators/reference">
+
+    <Import contextLocation="cc/contexts/dashboard/dashboardContext.xml"/>
+
+    <Context id="contactsContext" parent="dashboardContext">
+
+        <!-- CONTROLLERS -->
+        <Bean id="contactController" type="cc/modules/dashboard/presenters/ContactPresenter"/>
+
+        <!-- CONTACT STORE -->
+        <Bean id="contactStore" type="dojo/data/ObjectStore">
+            <Property name="objectStore">
+                <Bean>
+                    <ConstructorArg>
+                        <Ref bean="contactService"/>
+                    </ConstructorArg>
+                </Bean>
+            </Property>
+        </Bean>
+
+        <!-- CONTACT GRID -->
+        <Widget id="contactGrid" parent="enhancedGrid">
+            <Listener event="onRowDblClick" handler="handleRowDblClick" bean="contactController"/>
+            <ConstructorArg>
+                <Bean idref:store="contactStore">
+                    <Property name="query" type="object" value="{userId: commonContext.provide('userInfo').id}"/>
+                    <Property name="canSort" type="function" value="function(){return false;}"/>
+                    <Property name="plugins">
+                        <Bean>
+                            <Property name="selector">
+                                <Bean>
+                                    <ConstructorArg>
+                                        <Bean p:row="single" p:col="single" p:cell="false"/>
+                                    </ConstructorArg>
+                                </Bean>
+                            </Property>
+                        </Bean>
+                    </Property>
+                    <Property name="structure">
+                        <BeanGroup type="dojobiz/context/misc/ColumnGroup">
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="id"
+                                  p:name="ID"
+                                  p:width="30px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/propertyGrid/simpleValue_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="name"
+                                  p:name="Name"
+                                  p:width="80px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/contactGrid/name_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="lastName"
+                                  p:name="Last Name"
+                                  p:width="100px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/contactGrid/lastName_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="address"
+                                  p:name="Address"
+                                  p:width="200px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/contactGrid/address_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="phoneNumber"
+                                  p:name="Phone Number"
+                                  p:width="130px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/contactGrid/phoneNumber_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="email"
+                                  p:name="Email"
+                                  p:width="200px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/contactGrid/email_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="skype"
+                                  p:name="Skype"
+                                  p:width="150px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/contactGrid/skype_renderer.htm"/>
+                            </Bean>
+                            <Bean type="cc/modules/dashboard/renderers/EnhancedGridCellRenderer"
+                                  p:field="offerActivity"
+                                  p:name="Offer Activity"
+                                  p:width="100px"
+                                  p:styles="text-align:center;">
+                                <ConstructorArg type="string"
+                                                value="cc/modules/dashboard/templates/contactGrid/offerActivity_renderer.htm"/>
+                            </Bean>
+                        </BeanGroup>
+                    </Property>
+                </Bean>
+            </ConstructorArg>
+        </Widget>
+
+        <Widget id="contactSearchFieldsDropDown"
+                type="dijit/form/Select">
+            <ConstructorArg>
+                <Bean p:style="width: 150px; margin-top:0px">
+                    <Property name="options">
+                        <BeanGroup>
+                            <Bean p:disabled="false"
+                                  p:label="ID"
+                                  p:value="id"
+                                  p:selected="true"/>
+                            <Bean p:disabled="false"
+                                  p:label="Name"
+                                  p:value="name"
+                                  p:selected="false"/>
+                            <Bean p:disabled="false"
+                                  p:label="Last Name"
+                                  p:value="lastName"
+                                  p:selected="false"/>
+                            <Bean p:disabled="false"
+                                  p:label="Address"
+                                  p:value="address"
+                                  p:selected="false"/>
+                            <Bean p:disabled="false"
+                                  p:label="Phone Number"
+                                  p:value="phoneNumber"
+                                  p:selected="false"/>
+                            <Bean p:disabled="false"
+                                  p:label="Email"
+                                  p:value="email"
+                                  p:selected="false"/>
+                            <Bean p:disabled="false"
+                                  p:label="Skype"
+                                  p:value="skype"
+                                  p:selected="false"/>
+                            <Bean p:disabled="false"
+                                  p:label="Offer Activity"
+                                  p:value="offerActivity"
+                                  p:selected="false"/>
+                        </BeanGroup>
+                    </Property>
+                </Bean>
+            </ConstructorArg>
+            <Listener event="onChange"
+                      bean="contactController"
+                      handler="handleSearchFieldChange"/>
+        </Widget>
+
+        <Widget id="contactSearchText" type="dijit/form/FilteringSelect">
+            <ConstructorArg>
+                <Bean idref:store="contactStore">
+                    <Property name="searchAttr" value="id"/>
+                    <Property name="query" type="object" value="{userId: commonContext.provide('userInfo').id}"/>
+                    <Property name="autocomplete" value="true" />
+                </Bean>
+            </ConstructorArg>
+        </Widget>
+
+        <Widget id="contactSearchButton" type="dijit/form/Button">
+            <Property name="label" value="Search"/>
+            <Listener event="onClick"
+                      bean="contactController"
+                      handler="handleSearchButtonClick"/>
+        </Widget>
+
+        <Widget name="contactNameTextBox" parent="simpleValidationTextBox"
+                p:name="name"
+                p:label="Name"
+                p:style="width: 40em;">
+        </Widget>
+
+        <Widget name="contactLastNameTextBox" parent="simpleValidationTextBox"
+                p:name="lastNamename"
+                p:label="Last Name"
+                p:style="width: 40em;">
+        </Widget>
+
+        <Widget id="contactAddButton" type="dijit/form/Button">
+            <Property name="label" value="Add Contact"/>
+            <Listener event="onClick"
+                      bean="contactController"
+                      handler="handleAddButtonClick"/>
+        </Widget>
+
+        <Widget id="addContactPopup"
+                type="dijit/Dialog"
+                p:title="Add Contact"/>
+
+        <Widget id="addContactForm"
+                type="dijit/form/Form"
+                p:action="javascript://nop"/>
+
+        <Widget name="contactFormNameBox"
+                parent="simpleValidationTextBox"
+                p:name="name"
+                p:label="Name"
+                p:form="addContact"
+                p:promptMessage="Enter Name.">
+
+        </Widget>
+
+        <Widget name="contactFormLastNameBox"
+                parent="simpleValidationTextBox"
+                p:name="lastName"
+                p:label="Last Name"
+                p:form="addContact"
+                p:promptMessage="Enter Last Name.">
+
+        </Widget>
+    </Context>
+</beans>

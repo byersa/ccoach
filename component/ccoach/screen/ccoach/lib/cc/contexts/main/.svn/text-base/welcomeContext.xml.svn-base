@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<beans xmlns="dojobiz/context/beans">
+
+    <Context id="welcomeContext">
+
+        <!-- CONTROLLERS -->
+        <Bean id="welcomePresenter"
+              type="cc/modules/main/presenters/WelcomePresenter"/>
+
+        <!-- PROTOTYPES -->
+        <Prototype id="mainContainerProto">
+            <Listener mEvent="sign-in"
+                      bean="welcomePresenter"
+                      handler="handleSignIn"/>
+            <Listener mEvent="sign-out"
+                      bean="welcomePresenter"
+                      handler="handleSignOut"/>
+            <Listener mEvent="register"
+                      bean="welcomePresenter"
+                      handler="handleRegister"/>
+            <Listener mEvent="my-account"
+                      bean="welcomePresenter"
+                      handler="handleMyAccount"/>
+            <Listener mEvent="help"
+                      bean="welcomePresenter"
+                      handler="handleHelp"/>
+        </Prototype>
+    </Context>
+</beans>

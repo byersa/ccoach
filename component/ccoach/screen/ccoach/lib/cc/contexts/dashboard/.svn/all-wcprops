@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/8388/ccoach/webapp/ccoach/lib/cc/contexts/dashboard
+END
+dashboardContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/8339/ccoach/webapp/ccoach/lib/cc/contexts/dashboard/dashboardContext.xml
+END
+contactsContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/8339/ccoach/webapp/ccoach/lib/cc/contexts/dashboard/contactsContext.xml
+END
+myAccountContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/8388/ccoach/webapp/ccoach/lib/cc/contexts/dashboard/myAccountContext.xml
+END
