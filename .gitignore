@@ -7,3 +7,5 @@
 #!foo.html
 # Ignore objects and archives.
 #*.[oa]
+log
+db

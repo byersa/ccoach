@@ -8,13 +8,6 @@
     <beans:Context id="welcomeFlow" parent="welcomeContext">
 
         <Flow containerId="main-container-center">
-            <State id="initState" autoStart="true">
-                <Transition to="welcomeState"/>
-            </State>
-
-            <State id="welcomeState">
-                <View id="welcomeView" href="/lib/cc/modules/main/view/welcome.html"/>
-            </State>
 
             <State id="signInState">
                 <View id="signInView"

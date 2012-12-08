@@ -6,7 +6,7 @@
 	<link href="/themes/ccoach.less" type="text/css" rel="stylesheet/less"/>
     <script src="/js/less-1.3.1.js" type="text/javascript"></script>
     
-    <script src="../../../../dojo/webapp/dojo/libs/dojo/dojo.js" type="text/javascript"
+    <script src="/dojo/dojo/dojo.js" type="text/javascript"
             data-dojo-config="locale: 'en', parseOnLoad: true, async: true"></script>
 			
 	<!-- dojo nihilo theme -->
@@ -64,73 +64,11 @@
         }
     </style>
     
-	<script type="text/javascript">
-		require({
-			packages:[
-				{
-					location:'/lib/cc',
-					name:'cc'
-				},
-                                {
-					location:'../../../../dojo/webapp/dojo/libs',
-					name:'dojo'
-                                }
-			]
-		    },
-            [
-            'dojo/ready',
-                    'dojobiz/context/Container',
-                    'dojobiz/context/ViewAdapter',
-                    // dependencies;
-            
-                    // commonContext;
-                    'dijit/form/Form',
-                    'dijit/form/ValidationTextBox',
-                    'cc/widgets/RoleDependedValidationTextBox',
-                    'cc/widgets/RoleDependedCurrencyValidationTextBox',
-                    'cc/widgets/RoleDependedValidationDateBox',
-                    'cc/widgets/navigation/LinkButton',
-                    'dojobiz/context/misc/ColumnTemplate',
-                    'dojox/grid/EnhancedGrid',
-                    'cc/modules/main/utils/ValidationUtils',
-                    'cc/internal/User',
-            
-                    // dependencies;
-                    'dojo/store/JsonRest',
-                    'cc/services/main/MockUserService',
-                    'cc/extensions/mock/JsonRestMock',
-            
-                    'cc/modules/main/actions/GoToSignIn',
-                    'cc/modules/main/presenters/SignInPresenter',
-        
-                    // other;
-                    'cc/modules/main/presenters/BasePresenter',
-                    'dijit/Dialog'
-            ],
-            function (ready, Container, ViewAdapter) {
-              ready( function() {
-                require(
-                    [
-                    ],
-                    function() {
-                        require(['dojobiz/context/AsyncContext!cc/contexts/main/signInContext.xml'], function () {
-                            var context = Container.getContext('signInContext');
-                            if (context) {
-            
-                                //noinspection JSUnresolvedFunction
-                                new ViewAdapter(context).doQuery().doWire();
-                            }
-                            var bc = dijit.byId("welcomeScreenContainer");
-                            var mb = {l: 0, t: 0, w: document.documentElement.clientWidth, h: document.documentElement.clientHeight};
-                            bc.resize(mb);
-                            return;
-                        });
-                    }
-                );
-              }); //end of ready
-            } // end of factory method
-        ); //end of require
-    
-	</script>
+    <!-- application main file -->
+    <script src="/ccoach/lib/cc/modules/Module.js" type="text/javascript"></script>
     </head>
     <body class="claro ccoach">
+        <div id="startScreen">
+            <div id="loaderImg"></div>
+        </div>
+

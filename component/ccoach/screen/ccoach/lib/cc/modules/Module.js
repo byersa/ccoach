@@ -16,7 +16,9 @@ require(
         'dojobiz/context/flow/Flow',
 
         // welcomePage;
+        'cc/modules/main/presenters/MainPresenter',
         'cc/modules/main/presenters/WelcomePresenter',
+        'cc/modules/main/presenters/WelcomeLoginPresenter',
         'cc/widgets/navigation/MainContainer',
 
         // commonContext;

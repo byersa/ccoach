@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-1.1.xsd"
+        require-authentication="false">
+
+    <subscreens default-item="welcomeLogin" >
+        <subscreens-item name="welcomeLogin" location="component://ccoach/screen/ccoach/main/welcomeLogin.xml"/>
+    </subscreens>
+    
+    <widgets>
+        <render-mode>
+            <text type="html" location="component://ccoach/screen/includes/main.html.ftl"/>
+        </render-mode>
+ 	
+        <subscreens-active id="root-active"/>
+
+
+        <render-mode>
+            <text type="html"><![CDATA[</div></div></body></html>]]></text>
+        </render-mode>
+    </widgets>
+</screen>

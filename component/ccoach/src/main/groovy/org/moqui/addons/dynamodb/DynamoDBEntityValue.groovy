@@ -19,8 +19,8 @@ import org.moqui.entity.EntityException
 import org.moqui.impl.entity.EntityDefinition
 import org.moqui.impl.entity.EntityFacadeImpl
 import org.moqui.impl.entity.EntityValueBase
-import org.moqui.impl.entity.EntityValue
-
+import org.moqui.impl.entity.EntityValueImpl
+import org.moqui.entity.EntityValue
 import com.amazonaws.services.dynamodb.AmazonDynamoDBClient
 import com.amazonaws.services.dynamodb.model.AttributeAction
 import com.amazonaws.services.dynamodb.model.AttributeValue
@@ -75,8 +75,7 @@ class DynamoDBEntityValue extends EntityValueBase {
         Map<String, AttributeValue> item = new HashMap<String, AttributeValue>()
         try {
             buildAttributeValueMap(item, valueMap);
-            entityName = ed.getEntityName()
-            PutItemRequest putItemRequest = new PutItemRequest().withTableName(entityName).withItem(item);
+            PutItemRequest putItemRequest = new PutItemRequest().withTableName(ed.getEntityName()).withItem(item);
             PutItemResult result = client.putItem(putItemRequest)     
         } catch(ProvisionedThroughputExceededException e1) {
             throw new EntityException(e1.getMessage())
@@ -103,7 +102,7 @@ class DynamoDBEntityValue extends EntityValueBase {
         Map<String, AttributeValue> item = new HashMap<String, AttributeValue>()
         try {
             buildAttributeValueMap(item, valueMap);
-            entityName = ed.getEntityName()
+            String entName = ed.getEntityName()
             Key key = new Key()
             Map<String, Object>primaryKeyMap = getPrimaryKeys()
             if (primaryKeyMap && primaryKeyMap.keySet().size()) {
@@ -113,7 +112,7 @@ class DynamoDBEntityValue extends EntityValueBase {
                     break;
                 }
             } else {
-                throw new EntityException("Entity '${entityName}' does not have a primary key defined.")
+                throw new EntityException("Entity '${entName}' does not have a primary key defined.")
             }
             
             // see if there is a range key defined as a field with the index defined
@@ -125,7 +124,7 @@ class DynamoDBEntityValue extends EntityValueBase {
                     break;
                 }
             }
-            UpdateItemRequest updateItemRequest = new UpdateItemRequest().withTableName(entityName).withKey(key).withItem(item);
+            UpdateItemRequest updateItemRequest = new UpdateItemRequest().withTableName(entName).withKey(key).withItem(item);
             UpdateItemResult result = client.updateItem(updateItemRequest)     
         } catch(ProvisionedThroughputExceededException e1) {
             throw new EntityException(e1.getMessage())
@@ -150,7 +149,7 @@ class DynamoDBEntityValue extends EntityValueBase {
 
         AmazonDynamoDBClient client = ddf.getDatabase()
         try {
-            entityName = ed.getEntityName()
+            String entName = ed.getEntityName()
             Key key = new Key()
             Map<String, Object>primaryKeyMap = getPrimaryKeys()
             if (primaryKeyMap && primaryKeyMap.keySet().size()) {
@@ -160,7 +159,7 @@ class DynamoDBEntityValue extends EntityValueBase {
                     break;
                 }
             } else {
-                throw new EntityException("Entity '${entityName}' does not have a primary key defined.")
+                throw new EntityException("Entity '${entName}' does not have a primary key defined.")
             }
             
             // see if there is a range key defined as a field with the index defined
@@ -172,7 +171,7 @@ class DynamoDBEntityValue extends EntityValueBase {
                     break;
                 }
             }
-            DeleteItemRequest deleteItemRequest = new DeleteItemRequest().withTableName(entityName).withKey(key);
+            DeleteItemRequest deleteItemRequest = new DeleteItemRequest().withTableName(entName).withKey(key);
             DeleteItemResult result = client.updateItem(deleteItemRequest)     
         } catch(ProvisionedThroughputExceededException e1) {
             throw new EntityException(e1.getMessage())
@@ -196,7 +195,7 @@ class DynamoDBEntityValue extends EntityValueBase {
 
         AmazonDynamoDBClient client = ddf.getDatabase()
         try {
-            entityName = ed.getEntityName()
+            String entName = ed.getEntityName()
             Key key = new Key()
             Map<String, Object>primaryKeyMap = getPrimaryKeys()
             if (primaryKeyMap && primaryKeyMap.keySet().size()) {
@@ -206,7 +205,7 @@ class DynamoDBEntityValue extends EntityValueBase {
                     break;
                 }
             } else {
-                throw new EntityException("Entity '${entityName}' does not have a primary key defined.")
+                throw new EntityException("Entity '${entName}' does not have a primary key defined.")
             }
             
             // see if there is a range key defined as a field with the index defined
@@ -218,11 +217,11 @@ class DynamoDBEntityValue extends EntityValueBase {
                     break;
                 }
             }
-            GetItemRequest getItemRequest = new GetItemRequest().withTableName(entityName).withKey(key).withItem(item);
+            GetItemRequest getItemRequest = new GetItemRequest().withTableName(entName).withKey(key).withItem(item);
             GetItemResult result = client.getItem(getItemRequest)     
             
             java.util.Map<java.lang.String,AttributeValue> returnAttributeValueMap = result.getItem()
-            valueMap = buildEntityValueMap(returnAttributeValueMap)
+            buildEntityValueMap(returnAttributeValueMap)
         } catch(ProvisionedThroughputExceededException e1) {
             throw new EntityException(e1.getMessage())
         } catch(ConditionalCheckFailedException e2) {
@@ -249,7 +248,6 @@ class DynamoDBEntityValue extends EntityValueBase {
     
     void buildEntityValueMap( Map<String, EntityValue> attributeValueItem) {
     
-        Map<String, Object> returnEntityValueMap = [:]
         for(String fieldName in attributeValueItem) {
             Node fieldNode = entityDefinition.getFieldNode(fieldName)
             switch(fieldNode."@type") {
@@ -260,20 +258,22 @@ class DynamoDBEntityValue extends EntityValueBase {
                 case "text-long":
                 case "text-very-long":
                 case "text-indicator":
-                     returnEntityValueMap[fieldName] = attributeValueItem[fieldName].getS()
+                     valueMap[fieldName] = attributeValueItem[fieldName].getS()
                 case "number-integer":
                 case "number-decimal":
                 case "number-float":
                 case "currency-amount":
                 case "currency-precise":
                 case "time":
-                     returnEntityValueMap[fieldName] = attributeValueItem[fieldName].getN()
+                     valueMap[fieldName] = attributeValueItem[fieldName].getN()
                 case "date":
                      tm = attributeValueItem[fieldName].getN()
-                     returnEntityValueMap[fieldName] = new Date(tm)
+                     valueMap[fieldName] = new Date(tm)
                 case "date-time":
                      tm = attributeValueItem[fieldName].getN()
-                     returnEntityValueMap[fieldName] = new Timestamp(tm)
+                     valueMap[fieldName] = new Timestamp(tm)
+                default:
+                     valueMap[fieldName] = null
             }
         }
         

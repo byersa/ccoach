@@ -48,7 +48,7 @@
         <!-- The default conf file has a macro location defined for html already, but this is an example of how to
             refer to a file to override the default macros. -->
         <screen-text-output type="html" mime-type="text/html"
-                            macro-template-location="template/screen-macro/DojoHtmlMacros.ftl"/>
+                            macro-template-location="template/screen-macro/DojobizHtmlMacros.ftl"/>
     </screen-facade>
 
     <entity-facade crypt-pass="MoquiDevDefaultPassword:CHANGEME">
@@ -57,7 +57,9 @@
                                  jdbc-username="ofbiz" jdbc-password="ofbiz" pool-minsize="2"
                                  pool-maxsize="50" />
         </datasource>
-    </entity-facade>
+        <datasource group-name="transactional_nosql" object-factory="org.moqui.impl.entity.dynamodb.DynamoDBDatasourceFactory">
+        </datasource>
+     </entity-facade>
 
     <repository-list>
         <repository name="main" location="http://localhost:8081/rmi" type="rmi" workspace="default"

@@ -2,8 +2,9 @@
 <screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-1.1.xsd"
         require-authentication="false">
-    <subscreens default-item="welcomeLogin" >
-        <subscreens-item name="welcomeLogin" location="component://ccoach/screen/ccoach/welcomeLogin.xml"/>
+    <subscreens default-item="main" >
+        <subscreens-item name="main" location="component://ccoach/screen/ccoach/main.xml"/>
+        <subscreens-item name="Login" location="component://ccoach/screen/ccoach/Login.xml"/>
     </subscreens>
     <widgets><subscreens-active id="root-active"/></widgets>
 </screen>

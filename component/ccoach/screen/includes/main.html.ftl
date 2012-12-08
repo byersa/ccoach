@@ -64,70 +64,47 @@
         }
     </style>
     
-	<script type="text/javascript">
-		require({
-			packages:[
-				{
-					location:'/lib/cc',
-					name:'cc'
-				}
-			]
-		    },
-            [
-            'dojo/ready',
-                    'dojobiz/context/Container',
-                    'dojobiz/context/ViewAdapter',
-                    // dependencies;
-                    'dojobiz/context/flow/Flow',
-            
-                    // welcomePage;
-                    'cc/modules/main/presenters/WelcomePresenter',
-                    'cc/widgets/navigation/MainContainer',
-            
-                    // commonContext;
-                    'dijit/form/Form',
-                    'dijit/form/ValidationTextBox',
-                    'cc/widgets/RoleDependedValidationTextBox',
-                    'cc/widgets/RoleDependedCurrencyValidationTextBox',
-                    'cc/widgets/RoleDependedValidationDateBox',
-                    'cc/widgets/navigation/LinkButton',
-                    'dojobiz/context/misc/ColumnTemplate',
-                    'dojox/grid/EnhancedGrid',
-                    'cc/modules/main/utils/ValidationUtils',
-                    'cc/internal/User',
-                    'cc/extensions/Module',
-            
-                    // other;
-                    'cc/modules/main/presenters/BasePresenter',
-                    'dijit/Dialog',
-                    'dijit/layout/BorderContainer',
-                    'dijit/layout/StackContainer',
-                    'dijit/layout/ContentPane'
-            ],
-            function (ready, Container, ViewAdapter) {
-              ready( function() {
-                require(
-                    [
-                    ],
-                    function() {
-                        require(['dojobiz/context/AsyncContext!cc/flows/main/welcomeFlow.xml'], function () {
-                            var context = Container.getContext('welcomeFlow');
-                            if (context) {
-            
-                                //noinspection JSUnresolvedFunction
-                                new ViewAdapter(context).doQuery().doWire();
-                            }
-                            var bc = dijit.byId("welcomeScreenContainer");
-                            var mb = {l: 0, t: 0, w: document.documentElement.clientWidth, h: document.documentElement.clientHeight};
-                            bc.resize(mb);
-                            return;
-                        });
-                    }
-                );
-              }); //end of ready
-            } // end of factory method
-        ); //end of require
-    
-	</script>
+    <!-- application main file -->
+         <script type="text/javascript">
+                require({
+                        packages:[
+                                {
+                                        location:'/lib/cc',
+                                        name:'cc'
+                                }
+                        ]
+                },
+                [
+
+                ]);
+        </script>
+    <script  type="text/javascript">
+         require([
+         'cc/modules/Module', 
+         'cc/modules/main/WelcomeLogin',
+        'cc/modules/main/presenters/MainPresenter',
+        'cc/modules/main/presenters/WelcomePresenter',
+        'cc/modules/main/presenters/WelcomeLoginPresenter',
+        'dijit/form/Form',
+        'dijit/form/ValidationTextBox',
+        'cc/widgets/RoleDependedValidationTextBox',
+        'cc/widgets/RoleDependedCurrencyValidationTextBox',
+        'cc/widgets/RoleDependedValidationDateBox',
+        'cc/widgets/navigation/LinkButton',
+        'dojox/grid/EnhancedGrid'],
+        function(AsyncContext) {
+         require(['dojobiz/context/AsyncContext!cc/contexts/main/welcomeLoginContext.xml']);
+         });
+    </script>
+
     </head>
     <body class="claro ccoach">
+        <div id="startScreen">
+            <div id="loaderImg"></div>
+        </div>
+        <div
+            data-context-wire="$main-container->mainContainerProto"
+            id="main-container"
+            data-dojo-type="cc.widgets.navigation.MainContainer">
+                <div data-dojo-type="dijit.layout.ContentPane" region="center">
+

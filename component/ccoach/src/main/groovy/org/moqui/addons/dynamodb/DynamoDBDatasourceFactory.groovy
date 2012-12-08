@@ -13,7 +13,9 @@ package org.moqui.impl.entity.dynamodb
 
 import org.moqui.impl.entity.EntityDefinition
 import org.moqui.impl.entity.EntityFacadeImpl
+import org.moqui.entity.EntityFind
 import org.moqui.impl.entity.EntityFindImpl
+import org.moqui.entity.EntityValue
 import org.moqui.impl.entity.EntityValueImpl
 
 import javax.sql.DataSource
@@ -112,7 +114,6 @@ class DynamoDBDatasourceFactory implements EntityDatasourceFactory {
     void destroy() {
         return
     }
-/*
     @Override
     EntityValue makeEntityValue(String entityName) {
         EntityDefinition entityDefinition = efi.getEntityDefinition(entityName)
@@ -124,9 +125,8 @@ class DynamoDBDatasourceFactory implements EntityDatasourceFactory {
 
     @Override
     EntityFind makeEntityFind(String entityName) {
-        return new DynamoDBEntityFind(efi, entityName, this)
+        return new EntityFindImpl(efi, entityName, this)
     }
-*/
     @Override
     DataSource getDataSource() { return null }
 

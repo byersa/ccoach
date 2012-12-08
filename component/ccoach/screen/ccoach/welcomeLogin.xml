@@ -1,61 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-1.1.xsd"
-        standalone="true"
         require-authentication="false">
     <widgets>
-        <render-mode>
-            <text type="html" location="component://ccoach/screen/includes/welcomeLogin.html.ftl"/>
-        </render-mode>
  	
         <render-mode>
             <text type="html" ><![CDATA[
-            <div class="signInContainer">
-                <h1>Sign in</h1>
-            
-                <div class="innerContainer">
-                    <div id="signInFormHolder">
-                        <div id="signInMessBox"><!--.--></div>
-                        <div id="sinInIELoader"><!-- . --></div>
-                        <div id="signIn" class="signIn">
-                            <form action="javascript://nop"
-                                  data-context-wire="$userSignInForm->wiringFormProto">
-                                <fieldset>
-                                    <div class="formRow">
-                                        <div class="inputBackgroud">
-                                            <input data-context-query="#signInLoginTextBox"
-                                                   data-dojo-props="tabIndex: 1"/>
-                                        </div>
-                                    </div>
-                                    <div class="formRow">
-            
-            
-                                        <div class="inputBackgroud">
-                                            <input type="password"
-                                                   data-context-query="#signInPasswordTextBox"
-                                                   data-dojo-props="type:'password', tabIndex: 2"/>
-                                            <br /><br />
-                                            <div data-context-query="#forgotPasswordButton"
-                                                 data-dojo-props="tabIndex: 4"></div>
-                                        </div>
-                                    </div>
-                                    <div class="formRow">
-                                        <div class="signInBtn">
-                                            <div data-context-query="#performSignInBtn" data-dojo-props="tabIndex: 3">Sign In</div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+            <div data-dojo-type="cc.modules.main.WelcomeLogin">
             </div>
             ]]></text>
         </render-mode>
 
-
-        <render-mode>
-            <text type="html"><![CDATA[</body></html>]]></text>
-        </render-mode>
     </widgets>
 </screen>
