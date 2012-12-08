@@ -131,7 +131,7 @@ dependencies {
 check.dependsOn.remove('test')
 
 test {
-    systemProperty 'moqui.runtime', '/var/dev/cc'
+    systemProperty 'moqui.runtime', '../..'
     systemProperty 'moqui.conf', 'conf/MoquiDevConf.xml'
     systemProperty 'moqui.init.static', 'true'
     systemProperty 'moqui.accessKey', 'AKIAIBRXVHUM37OTC4MQ'
